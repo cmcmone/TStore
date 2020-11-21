@@ -31,7 +31,7 @@ public class TestController {
             String middleName = temp.getMiddleName();
             String lastName = temp.getLastName();
             String userName;
-            if (StringUtils.isEmpty(middleName)) {
+            if (StringUtils.hasLength(middleName)) {
                 userName = firstName + ' ' + lastName;
             } else {
                 userName = firstName + ' ' + middleName + ' ' + lastName;
@@ -40,5 +40,14 @@ public class TestController {
         }
         model.addAttribute("teamMember", memberList);
         return "test";
+    }
+
+    @RequestMapping("/insert")
+    public String insertUser() {
+        User user = new User();
+        user.setFirstName("first");
+        user.setLastName("Last");
+        userService.insertUser(user);
+        return "insert";
     }
 }
