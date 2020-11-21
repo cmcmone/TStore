@@ -1,9 +1,15 @@
 server:
   port: 8080
 
+
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/TStore
-    username: root
-    password: root
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:tstore.db
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
