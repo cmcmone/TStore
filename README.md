@@ -1,2 +1,2 @@
 # TStore
-CS360 Project
+CS360 Project - TStore
