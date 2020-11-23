@@ -22,7 +22,6 @@ public class LoginController {
                         @RequestParam("password") String password,
                         Model model) {
         boolean isLogin = loginService.login(email, password);
-        System.out.println(isLogin);
         model.addAttribute("success", !isLogin);
         if (isLogin) {
             return "index";
