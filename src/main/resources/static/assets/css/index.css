@@ -1,0 +1,56 @@
+.main {
+  margin: 0 0;
+}
+
+.slider {
+  padding: 0 11%;
+  height: 638px;
+  border: 0px solid red;
+}
+
+.loop-wrap {
+  left: 330px;
+  top: 30px;
+  width: 870px;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.loop-images-container{
+  position: absolute;
+  font-size: 0;
+  width: 200%;
+  transform: translate(0,0);
+  animation: loop 10s linear infinite;
+}
+
+.loop-image {
+  width: 870px;
+  height: 490px;
+}
+
+@keyframes loop {
+  0% {transform: translate(0,0);}
+  15% {transform: translate(0,0);}
+
+  35% {transform: translate(0,0);}
+  45% {transform: translate(0,0);}
+
+  60% {transform: translate(-50%,0);}
+  75% {transform: translate(-50%,0);}
+
+  100% {transform: translate(0,0);}
+}
+
+.slider-bottom {
+  position: absolute;
+  width: 870px;
+  top: 800px;
+  left: 499px;
+  height: 94px;
+  border: 0px solid blue;
+  background-image: url(/assets/images/slider/all-shipping.png);
+  background-size: contain;
+}

@@ -1,0 +1,193 @@
+
+<div class="header">
+  <div class="header-top">
+    <div class="top-left">
+      <p><span>Customer Service:</span>(800) 123 456 789</p>
+    </div>
+    <div class="top-right">
+      <ul>
+        <li>
+          <a th:href="@{/login}">Please Login in</a>
+        </li>
+        <li>
+          <div class="myAcc-drop-down"> 
+            <a href="#">
+              My Account
+            </a>
+            <div class="myAcc-drop-down-content">
+              <ul>
+                <li>Your Order</li>
+                <li>Sign up</li>
+              </ul>
+            </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="clear header-middle">
+    <div class="middle-left">
+      <div class="website-logo"></div>
+    </div>
+    <div class="middle-middle">
+      <form action="#">
+        <input type="text" class="header-search" placeholder="Enter your search key ...">
+        <button class="header-search-button" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="middle-right">
+      <a href="#">
+        <img src="/assets/images/shopping-carts.png" alt="My Cart">
+        <span>My Cart</span>
+      </a>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="categories-menu-bar">
+      <div class="categories-menu-bar-dropdown" onclick="DropdownMenu()">
+        <a href="#">
+          All Categories
+        </a>
+      </div>
+      <div id="categories-menu-bar-dropdown-detail" class="categories-menu-bar-dropdown-detail">
+        <ul>
+          <li class="detail-arrow_right">
+            <a href="#">Computers</a>
+            <ul class="detail-sub-menu">
+              <li class="detail-sub-menu-title">
+                <a href="#">Laptops</a>
+                <ul>
+                  <li><a href="#">PC Laptops</a></li>
+                  <li><a href="#">MacBooks</a></li>
+                  <li><a href="#">Microsoft Surface Laptops</a></li>
+                  <li><a href="#">Chromebooks</a></li>
+                </ul>
+              </li>
+              <li class="detail-sub-menu-title">
+                <a href="#">Desktops</a>
+                <ul>
+                  <li><a href="#">Computer Towers</a></li>
+                  <li><a href="#">Apple iMac, Mini & Mac Pro</a></li>
+                  <li><a href="#">Microsoft Surface Studio 2</a></li>
+                  <li><a href="#">Gaming Desktops</a></li>
+                </ul>
+              </li>
+              <li class="detail-sub-menu-title">
+                <a href="#">2-in-1s</a>
+                <ul>
+                  <li><a href="#">Microsoft Surface</a></li>
+                  <li><a href="#">Lenovo</a></li>
+                  <li><a href="#">Dell</a></li>
+                  <li><a href="#">Asus</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="detail-arrow_right">
+            <a href="#">Electronics</a>
+            <ul class="detail-sub-menu">
+              <li class="detail-sub-menu-title">
+                <a href="#">TV & Video</a>
+                <ul>
+                  <li><a href="#">PC Laptops</a></li>
+                  <li><a href="#">MacBooks</a></li>
+                  <li><a href="#">Microsoft Surface Laptops</a></li>
+                  <li><a href="#">Chromebooks</a></li>
+                </ul>
+              </li>
+              <li class="detail-sub-menu-title">
+                <a href="#">Phones & Accessories</a>
+                <ul>
+                  <li><a href="#">iPhone</a></li>
+                  <li><a href="#">Samsung</a></li>
+                  <li><a href="#">bluetooth headsets</a></li>
+                  <li><a href="#">wireless accessories</a></li>
+                </ul>
+              </li>
+              <li class="detail-sub-menu-title">
+                <a href="#">Video Games</a>
+                <ul>
+                  <li><a href="#">PlayStation</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">PC</a></li>
+                  <li><a href="#">Nintendo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="detail-arrow_right">
+            <a href="#">Games</a>
+            <ul class="detail-sub-menu">
+              <li class="detail-sub-menu-title">
+                <a href="#">Roblox</a>
+                <ul>
+                  <li><a href="#">Roblox Gift Card</a></li>
+                  <li><a href="#">Online Game Code</a></li>
+                </ul>
+              </li>
+              <li class="detail-sub-menu-title">
+                <a href="#">Mojang AB</a>
+                <ul>
+                  <li><a href="#">Minecraft</a></li>
+                  <li><a href="#">Online Game Code</a></li>
+                </ul>
+              </li>
+              <li class="detail-sub-menu-title">
+                <a href="#">Electronic Arts</a>
+                <ul>
+                  <li><a href="#">Apex Legends</a></li>
+                  <li><a href="#">Online Game Code</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="menu-arrow-down">
+          <a href="#">Computers</a>
+          <div class="menu-dropdown-submenu">
+            <ul>
+              <li><a href="">Laptops</a></li>
+              <li><a href="">Desktops</a></li>
+              <li><a href="">2-in-1s</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-arrow-down">
+          <a href="#">Electronics</a>
+          <div class="menu-dropdown-submenu-longer">
+            <ul>
+              <li><a href="">TV & Video</a></li>
+              <li><a href="">Phones & Accessories</a></li>
+              <li><a href="">Video Games</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-arrow-down">
+          <a href="#">Games</a>
+          <div class="menu-dropdown-submenu-middle">
+            <ul>
+              <li><a href="">Roblox</a></li>
+              <li><a href="">Mojang AB</a></li>
+              <li><a href="">Electronic Arts</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

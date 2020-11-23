@@ -1,0 +1,94 @@
+@import "common.css";
+
+body {
+  margin: 0 0;
+}
+
+.footer {
+  height: 190px;
+  margin: 10px 11%;
+}
+
+.footer .footer-left {
+  width: 357px;
+  border: 0px solid yellow;
+  float: left;
+}
+
+.tstore-info {
+  margin-top: 40px;
+}
+
+.tstore-info > p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 12px 0 0 0;
+}
+
+.footer .footer-right {
+  width: 820px;
+  border: 0px solid red;
+  float: right;
+}
+
+.footer-right .footer-list {
+  border: 0px solid blue;
+  width: 180px;
+  display: inline-block;
+}
+
+.footer-right .my-account{
+  border: 0px solid yellow;
+  width: 180px;
+  display: inline-block;
+}
+
+.footer-right .find-it-fast {
+  border: 0px solid green;
+  width: 180px;
+  display: inline-block;
+}
+
+.footer-right .customer-service {
+  border: 0px solid purple;
+  width: 180px;
+  display: inline-block;
+}
+
+.footer-right .footer-list {
+  margin-left: 15px;
+}
+
+.footer-list ul li:first-child {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3d3d3d;
+}
+
+.footer-list ul li {
+  margin-top: 18px;
+}
+
+.footer-list ul li:not(:first-child):hover {
+  padding-left: 6px;
+  color: #007bff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #e4e3e3;
+}
+
+.footer-bottom .container {
+  margin: 10px 11%;
+}
+
+.container {
+  text-align: center;
+}
+
+.container p a {
+  color: #408ed4;
+}
