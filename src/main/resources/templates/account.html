@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+
+  <script type="text/javascript" th:src="@{assets/js/common.js}"></script>
+
+  <link rel="stylesheet" type="text/css" th:href="@{assets/css/header.css}">
+  <script type="text/javascript" th:src="@{assets/js/header.js}"></script>
+
+  <link rel="stylesheet" type="text/css" th:href="@{assets/css/footer.css}">
+  <script type="text/javascript" th:src="@{assets/js/footer.js}"></script>
+
+  <link rel="stylesheet" type="text/css" th:href="@{assets/css/account.css}">
+</head>
+
+<body>
+  <!-- Header Area Start -->
+  <header th:replace="common/header.html"></header>
+  <!-- Header Area End -->
+
+  <!--======================
+    My Account area Start
+    ==========================-->
+  <div class="my-account-area clear">
+    <div class="container">
+      <div class="row">
+        <div class="my-account-left">
+          <ul class="nav flex-column dashboard-list mb-20">
+            <li><a class="nav-link" data-toggle="tab" href="#dashboard">Dashboard</a></li>
+            <li><a class="nav-link active show" data-toggle="tab" href="#orders">Orders</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#downloads">Downloads</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#address">Addresses</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#account-details">Account details</a></li>
+            <li><a class="nav-link" href="login.html">logout</a></li>
+          </ul>
+        </div>
+        <div class="my-account-right">
+          <!-- Tab panes -->
+          <div class="tab-content dashboard-content mb-20">
+            <div id="orders" class="tab-pane fade active show">
+              <h3 class="last-title">Orders</h3>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Order</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                      <th>Total</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>September 10, 2019</td>
+                      <td>Processing</td>
+                      <td>$25.00 for 1 item </td>
+                      <td><a class="btn btn-secondary" href="cart.html">view</a></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>October 4, 2019</td>
+                      <td>Processing</td>
+                      <td>$17.00 for 1 item </td>
+                      <td><a class="btn btn-secondary" href="cart.html">view</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--======================
+  My Account area End
+  ==========================-->
+
+  <!-- Footer Area Start -->
+  <footer th:replace="common/footer.html"></footer>
+  <!-- Footer Area End -->
+</body>
+
+</html>

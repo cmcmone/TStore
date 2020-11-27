@@ -1,0 +1,135 @@
+.cart-area>.container {
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0px 11%;
+  border: 0px solid red;
+  display: block;
+}
+
+.col-lg-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 0;
+}
+
+.table-desc {
+  border: 1px solid #ebebeb;
+  margin-bottom: 50px;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cart-page table thead tr:last-child th,
+.table-desc table tbody tr td:last-child {
+  border-right: 0;
+}
+
+.table-desc .cart-page table thead tr th {
+  border-bottom: 3px solid #408ed4;
+  border-right: 1px solid #ebebeb;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 10px;
+  text-align: center;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.table-desc .cart-page table tbody tr td {
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  text-align: center;
+  padding: 10px;
+}
+
+.table-desc .cart-page table tbody tr td.product-name a {
+  color: #232323;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table-desc .cart-page table tbody tr td.product-name {
+  min-width: 180px;
+}
+
+.table-desc .cart-page table tbody tr td.product-name a:hover {
+  color: #408ed4;
+}
+
+.table-desc .cart-page table tbody tr td.product-price {
+  min-width: 130px;
+  color: #232323;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.table-desc .cart-page table tbody tr td.product-quantity {
+  min-width: 180px;
+}
+
+.table-desc .cart-page table tbody tr td.product-quantity label {
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.table-desc .cart-page table tbody tr td.product-quantity input {
+  width: 60px;
+  height: 40px;
+  padding: 0 5px 0 10px;
+  background: 0 0;
+  border: 1px solid #ebebeb;
+}
+
+.table-desc .cart-page table tbody tr td.product-remove {
+  min-width: 100px;
+}
+
+.table-desc .cart-page table tbody tr td.product-remove a {
+  font-size: 20px;
+  color: #232323;
+}
+
+.cart-submit {
+  text-align: right;
+  padding: 12px;
+}
+
+.cart-submit button {
+  background: #408ed4;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  height: 38px;
+  line-height: 18px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.product-image a img {
+  max-width: 160px;
+  max-height: 124px;
+}
+
+.cart-submit button:hover {
+  background: #232323;
+}

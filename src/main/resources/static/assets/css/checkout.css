@@ -1,0 +1,291 @@
+.checkout-area .container {
+  padding: 40px 0;
+  margin: 0px 11%;
+  border: 0px solid red;
+  max-width: 1200px;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+
+.row {
+  height: 100%;
+}
+
+.form-row {
+  margin-right: 0px;
+  margin-left: 0px
+}
+
+.checkout-bill {
+  float: left;
+  max-width: 50%;
+  min-width: 49%;
+}
+
+.checkout-order {
+  float: right;
+  max-width: 50%;
+  min-width: 49%;
+}
+
+.form-head {
+  background: #3d3d3d;
+  color: #fff;
+  padding: 12px 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.offset-lg-3 {
+  margin-left: 25%
+}
+
+.mb-20 {
+  margin-bottom: 20px
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+.checkout_info {
+  width: 570px;
+  border: 1px solid #e4e3e3;
+  margin-top: 25px;
+  padding: 20px 30px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px
+}
+
+.last-title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+  text-transform: capitalize
+}
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+.form_group {
+  margin-bottom: 20px
+}
+
+.form_group .input-form {
+  border: 1px solid #e4e3e3;
+  background: 0 0;
+  height: 40px;
+  width: 90%;
+  padding: 0 20px
+}
+
+.position-relative {
+  position: relative !important
+}
+
+.form_group .form-label {
+  font-size: 16px;
+  display: block;
+  line-height: 1;
+  font-weight: 600;
+  padding-left: 8px;
+  text-align: left;
+}
+
+.form-label span {
+  color: blue;
+}
+
+.form_group.group_3 {
+  display: flex;
+  align-items: center
+}
+
+.form_group .login-register {
+  display: inline-block;
+  width: 80px;
+  background: #408ed4;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-right: 20px;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px
+}
+
+.form_group .login-register:hover {
+  background: #3d3d3d
+}
+
+.text-left {
+  text-align: left !important
+}
+
+.text-right {
+  text-align: right !important
+}
+
+.text-center {
+  text-align: center !important
+}
+
+.show-btn:hover {
+  background: #408ed4;
+  border: 1px solid #408ed4
+}
+
+.order_table {
+  margin-bottom: 35px;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.order_table table {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.order_table table thead {
+  background: #f3f3f3;
+}
+
+.order_table table thead tr th {
+  min-width: 50%;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.order_table table tbody tr td {
+  min-width: 50%;
+  text-align: center;
+  padding: 15px 0;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.order_table table tfoot tr th {
+  min-width: 50%;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.btn-secondary {
+  background: #408ed4;
+  border: none;
+  outline: 0;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}

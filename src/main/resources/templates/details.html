@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product details</title>
+
+  <script type="text/javascript" th:src="@{assets/js/common.js}"></script>
+
+  <link rel="stylesheet" type="text/css" th:href="@{assets/css/header.css}">
+  <script type="text/javascript" th:src="@{assets/js/header.js}"></script>
+
+  <link rel="stylesheet" type="text/css" th:href="@{assets/css/footer.css}">
+  <script type="text/javascript" th:src="@{assets/js/footer.js}"></script>
+
+  <link rel="stylesheet" type="text/css" th:href="@{assets/css/details.css}">
+  <script type="text/javascript" th:src="@{assets/js/details.js}"></script>
+</head>
+
+<body>
+  <!-- Header Area Start -->
+  <header th:replace="common/header.html"></header>
+  <!-- Header Area End -->
+
+  <!-- ========================
+    Product Details Area Start 
+    ===========================-->
+  <div class="product-area product-details-section clear">
+    <div class="container">
+      <div class="left-image">
+        <img src="/assets/images/product/product-2.jpg" alt="">
+      </div>
+      <div class="right-details">
+        <div class="product-head">
+          <h1 class="product-title">Porro quisquam eget feugiat pretium</h1>
+        </div>
+        <div class="rating-meta">
+          <div class="rating">
+            <span class="yellow"><i class="icon-star"></i></span>
+            <span class="yellow"><i class="icon-star"></i></span>
+            <span class="yellow"><i class="icon-star"></i></span>
+            <span class="yellow"><i class="icon-star"></i></span>
+            <span class="yellow"><i class="icon-star"></i></span>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <span class="regular-price">$30.00</span>
+        </div>
+
+        <div class="product-description">
+          <p>Porro first 4K UHD Camcorder, the GX10 has a compact and portable design that delivers outstanding video
+            quality with remarkable detail. With a combination of incredible features and functionality, the GX10 is the
+            ideal camcorder for aspiring filmmakers.</p>
+        </div>
+
+        <div class="product-packeges">
+          <table>
+            <tbody>
+              <tr>
+                <td class="label"><span>Quantity</span></td>
+                <td class="value">
+                  <div class="product-quantity">
+                    <span class="qty-btn minus" onclick="minus();"><i class="icon-keyboard_arrow_down1"></i></span>
+                    <input type="text" class="input-qty" id="quantity-value" value="1">
+                    <span class="qty-btn plus" onclick="plus();"><i class="icon-keyboard_arrow_up"></i></span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="product-buttons grid_list">
+          <div class="action-link">
+            <button class="btn-secondary">Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="product_description_wrap mt-20">
+          <div class="product_desc">
+            <h2 class="last-title mb-20">Details</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis noexercit ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========================
+  Product Details Area End 
+  ===========================-->
+
+  <!-- Footer Area Start -->
+  <footer th:replace="common/footer.html"></footer>
+  <!-- Footer Area End -->
+</body>
+
+</html>

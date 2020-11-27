@@ -1,0 +1,175 @@
+.my-account-area .container {
+  padding: 40px 0;
+  margin: 0px 11%;
+  max-width: 1200px;
+  border: 0px solid red;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+
+.row {
+  height: 100%;
+}
+
+.my-account-left {
+  float: left;
+  border: 0px solid green;
+  position: relative;
+  width: 16.666%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.my-account-right {
+  float: right;
+  width: 80%;
+  border: 0px solid yellow;
+}
+
+.dashboard-list {
+  padding: 3px 15px;
+  border: 1px solid #ebebeb;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.dashboard-list li:not(:last-child)>a {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.dashboard-list li>a {
+  padding: 12px 0;
+}
+
+.flex-column>li {
+  display: inline-block;
+  height: 50px;
+  width: 90%;
+  text-align: left;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none
+}
+
+.nav-link.disabled {
+  color: #6c757d
+}
+
+.dashboard-content {
+  border: 1px solid #ebebeb;
+  padding: 30px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.tab-content>.active {
+  display: block;
+}
+
+.dashboard-content .last-title {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.last-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dashboard-content table {
+  margin-bottom: 0;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+table {
+  border-collapse: collapse;
+}
+
+.dashboard-content table thead th {
+  border-top: 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  height: 30px;
+  line-height: 30px;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+th {
+  text-align: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table tbody tr td {
+  height: 40px;
+  line-height: 40px;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.dashboard-content table tbody td {
+  vertical-align: middle;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: #408ed4;
+  border: none;
+  outline: 0;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/assets/fonts/icomoon.eot?lh44li');
-  src:  url('/assets/fonts/icomoon.eot?lh44li#iefix') format('embedded-opentype'),
-    url('/assets/fonts/icomoon.ttf?lh44li') format('truetype'),
-    url('/assets/fonts/icomoon.woff?lh44li') format('woff'),
-    url('/assets/fonts/icomoon.svg?lh44li#icomoon') format('svg');
+  src:  url('/assets/fonts/icomoon.eot?efaqky');
+  src:  url('/assets/fonts/icomoon.eot?efaqky#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icomoon.ttf?efaqky') format('truetype'),
+    url('/assets/fonts/icomoon.woff?efaqky') format('woff'),
+    url('/assets/fonts/icomoon.svg?efaqky#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -51,6 +51,30 @@
 }
 .icon-menu:before {
   content: "\e907";
+}
+.icon-star:before {
+  content: "\e90a";
+}
+.icon-star_outline:before {
+  content: "\e90b";
+}
+.icon-bookmark:before {
+  content: "\e90c";
+}
+.icon-bookmark_outline:before {
+  content: "\e90d";
+}
+.icon-delete:before {
+  content: "\e911";
+}
+.icon-favorite:before {
+  content: "\e90e";
+}
+.icon-favorite_outline:before {
+  content: "\e90f";
+}
+.icon-bookmarks:before {
+  content: "\e910";
 }
 .icon-keyboard_arrow_down:before {
   content: "\e900";

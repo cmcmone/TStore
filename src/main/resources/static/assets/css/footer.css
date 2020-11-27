@@ -28,7 +28,7 @@ body {
 .footer .footer-right {
   width: 820px;
   border: 0px solid red;
-  float: right;
+  float: left;
 }
 
 .footer-right .footer-list {

@@ -6,8 +6,11 @@
     </div>
     <div class="top-right">
       <ul>
-        <li>
-          <a th:href="@{/login}">Please Login in</a>
+        <li th:if="${session.loginUser == null}">
+          <a th:href="@{/login.html}">Please Login in</a>
+        </li>
+        <li th:if="${session.loginUser != null}">
+          <span th:text="'Welcome, ' + ${session.loginUser} + '.'"></span>
         </li>
         <li>
           <div class="myAcc-drop-down"> 

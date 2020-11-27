@@ -302,7 +302,7 @@ a:hover {
 .header .header-bottom .header-menu {
   height: 65px;
   width: 890px;
-  float: right;
+  float: left;
   border: 0px solid red;
   margin-right: 11%;
 }
@@ -328,7 +328,7 @@ a:hover {
 
 .menu-arrow-down {
   position: relative;
-  z-index: ;
+  z-index: 1;
 }
 
 .menu-arrow-down::after {
