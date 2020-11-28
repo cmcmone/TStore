@@ -12,3 +12,5 @@ spring:
   mvc:
     format:
       date: MM-dd-yyyy
+  thymeleaf:
+    cache: false
