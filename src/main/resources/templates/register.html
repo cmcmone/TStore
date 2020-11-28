@@ -28,29 +28,32 @@
       <div class="row">
         <div class="offset-lg-3 col-lg-6">
           <div class="checkout_info mb-20">
-            <form class="form-row text-left" th:action="@{/register.html}" th:method="POST">
+            <form class="form-row text-left" th:action="@{/register}" th:method="POST">
               <h5 class="last-title mb-10 text-center">Creat New Account</h5>
               <div class="col-lg-12 text-left mb-20">
                 <p class="register-page"> Already have an account? <a href="login.html">Log in instead!</a></p>
               </div>
               <div class="form_group col-12">
                 <label class="form-label">User Name <span>*</span></label>
-                <input class="input-form" type="text">
+                <input class="input-form" type="text" th:name="name">
               </div>
               <div class="form_group col-12">
                 <label class="form-label">Email Address <span>*</span></label>
-                <input class="input-form" type="text">
+                <input class="input-form" type="text" th:name="email">
               </div>
               <div class="form_group col-12">
                 <label class="form-label">Password <span>*</span></label>
-                <input class="input-form input-login" type="password">
+                <input class="input-form input-login" type="password" th:name="password">
               </div>
               <div class="form_group col-12">
                 <label class="form-label">Confirm Password <span>*</span></label>
-                <input class="input-form input-login" type="password">
+                <input class="input-form input-login" type="password" th:name="repassword">
+              </div>
+              <div class="form_group col-12 text-left" th:if="${not #strings.isEmpty(msg)}">
+                <span class="invalid-text" th:text="${msg}"></span>
               </div>
               <div class="form-row mt-20">
-                <input type="submit" class="btn-submit" value="Register">
+                <input type="submit" class="btn-submit" value="Register" >
               </div>
             </form>
           </div>
