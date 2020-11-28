@@ -21,5 +21,5 @@ public class Vendor {
     private long vendorID;
 
     @Column(name = "name", nullable = false)
-    private long name;
+    private String name;
 }

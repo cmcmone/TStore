@@ -40,4 +40,14 @@ public class LoginController {
             return "login";
         }
     }
+
+    @RequestMapping("/signup")
+    public String signup(HttpSession session) {
+        Object isLogin = session.getAttribute("loginUser");
+        if (isLogin != null) {
+            session.removeAttribute("loginUser");
+            return "redirect:/main.html";
+        }
+        return "index";
+    }
 }

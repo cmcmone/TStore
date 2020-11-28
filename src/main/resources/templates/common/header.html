@@ -19,13 +19,8 @@
             </a>
             <div class="myAcc-drop-down-content">
               <ul>
-                <li>Your Order</li>
-                <li th:if="${session.loginUser == null}">
-                  <a th:href="@{/register.html}">Sign up</a>
-                </li>
-                <li th:if="${session.loginUser != null}">
-                  <a th:href="@{/logout}">Logout</a>
-                </li>
+                <a th:href="@{/myaccount}"><li>Your Order</li></a>
+                <a th:href="@{/signup}"><li>Sign up</li></a>
               </ul>
             </div>
             </div>
@@ -35,7 +30,9 @@
   </div>
   <div class="clear header-middle">
     <div class="middle-left">
-      <div class="website-logo"> </div>
+      <a th:href="@{/index.html}">
+        <div class="website-logo"></div>
+      </a>
     </div>
     <div class="middle-middle">
       <form action="#">
@@ -44,8 +41,8 @@
       </form>
     </div>
     <div class="middle-right">
-      <a href="#">
-        <img src="/assets/images/shopping-carts.png" alt="My Cart">
+      <a th:href="@{/mycart}">
+        <img th:src="@{'/assets/images/shopping-carts.png'}" alt="My Cart">
         <span>My Cart</span>
       </a>
     </div>

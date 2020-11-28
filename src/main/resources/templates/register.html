@@ -40,6 +40,7 @@
               <div class="form_group col-12">
                 <label class="form-label">Email Address <span>*</span></label>
                 <input class="input-form" type="text" th:name="email">
+                <span class="form-emailMsg" th:if="${not #strings.isEmpty(emailMsg)}" th:text="${emailMsg}"></span>
               </div>
               <div class="form_group col-12">
                 <label class="form-label">Password <span>*</span></label>

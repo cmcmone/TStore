@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpSession;
+
 //Jack Baxter
 
 @Controller
@@ -20,7 +22,7 @@ public class RegisterController {
     public String register(@RequestParam("name") String name,
                         @RequestParam("email") String email,
                         @RequestParam("password") String password,
-                        Model model) {
+                        Model model, HttpSession session) {
         User user = new User();
         user.setUserName(name);
         user.setEmail(email);
@@ -29,15 +31,11 @@ public class RegisterController {
         boolean isRegister = registerService.register(user);
         model.addAttribute("success", !isRegister);
         if (isRegister) {
-            return "login";
+            session.setAttribute("loginUser", name);
+            return "redirect:/main.html";
         } else {
-            model.addAttribute("msg", "Email is already in use. Please try again.");
+            model.addAttribute("emailMsg", "Email is already in use. Please try again.");
             return "register";
         }
-    }
-
-    @GetMapping("/register")
-    public String toRegisterPage() {
-        return "register";
     }
 }
