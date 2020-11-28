@@ -20,7 +20,12 @@
             <div class="myAcc-drop-down-content">
               <ul>
                 <li>Your Order</li>
-                <li>Sign up</li>
+                <li th:if="${session.loginUser == null}">
+                  <a th:href="@{/register.html}">Sign up</a>
+                </li>
+                <li th:if="${session.loginUser != null}">
+                  <a th:href="@{/logout}">Logout</a>
+                </li>
               </ul>
             </div>
             </div>
@@ -30,7 +35,7 @@
   </div>
   <div class="clear header-middle">
     <div class="middle-left">
-      <div class="website-logo"></div>
+      <div class="website-logo"> </div>
     </div>
     <div class="middle-middle">
       <form action="#">
