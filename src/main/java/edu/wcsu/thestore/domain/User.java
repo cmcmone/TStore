@@ -3,6 +3,7 @@ package edu.wcsu.thestore.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 
@@ -17,12 +18,15 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private long userId;
-    @Column(name = "user_name")
+    @Column(name = "id")
+    private long userID;
+    @Column(name = "username")
     private String userName;
-    @Column(name = "email", unique = true)
+    @Column(name = "email", unique = true, nullable = false)
     private String email;
     @Column(name = "password")
     private String password;
+    @Column(name = "money")
+    @ColumnDefault("0.0")
+    private Double money;
 }
