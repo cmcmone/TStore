@@ -21,6 +21,9 @@
               <ul>
                 <a th:href="@{/myaccount}"><li>Your Order</li></a>
                 <a th:href="@{/signup}"><li>Sign up</li></a>
+                <li th:if="${session.loginUser != null}">
+                  <a th:href="@{/logout}">Logout</a>
+                </li>
               </ul>
             </div>
             </div>
