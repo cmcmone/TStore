@@ -55,18 +55,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr th:each="order : ${myOrder}">
                       <td>1</td>
-                      <td>September 10, 2019</td>
-                      <td>Processing</td>
-                      <td>$25.00 for 1 item </td>
-                      <td><a class="btn btn-secondary" href="cart.html">view</a></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>October 4, 2019</td>
-                      <td>Processing</td>
-                      <td>$17.00 for 1 item </td>
+                      <td th:text="${order['dateOrdered']}"></td>
+                      <td th:text="${order['status']}"></td>
+                      <td th:text="${order['totalCost']}"></td>
                       <td><a class="btn btn-secondary" href="cart.html">view</a></td>
                     </tr>
                   </tbody>

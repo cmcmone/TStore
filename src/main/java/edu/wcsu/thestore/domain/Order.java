@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
 
 /**
  * @author Ray Chen
@@ -22,7 +21,7 @@ public class Order {
     private long orderID;
 
     @Column(name = "dateOrdered")
-    private Date dateOrdered;
+    private String dateOrdered;
 
     @Column(name = "totalItems")
     private String totalItems;
@@ -32,4 +31,7 @@ public class Order {
 
     @Column(name = "status")
     private String status;
+
+    @Column(name = "userID")
+    private long userID;
 }

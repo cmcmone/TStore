@@ -33,6 +33,7 @@ public class LoginController {
             if (optional.isPresent()) {
                 User user = (User) optional.get();
                 session.setAttribute("loginUser", user.getUserName());
+                session.setAttribute("userID", user.getUserID());
             }
             return "redirect:/index.html";
         } else {
@@ -46,6 +47,7 @@ public class LoginController {
         Object isLogin = session.getAttribute("loginUser");
         if (isLogin != null) {
             session.removeAttribute("loginUser");
+            session.removeAttribute("userID");
             return "redirect:/index.html";
         }
         return "index";
