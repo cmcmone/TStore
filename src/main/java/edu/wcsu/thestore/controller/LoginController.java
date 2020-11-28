@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 /**
- * @author Ray Chen
+ * @author Ray Chen, Jack Baxter
  * @version 1.0
  */
 @Controller
@@ -34,19 +34,19 @@ public class LoginController {
                 User user = (User) optional.get();
                 session.setAttribute("loginUser", user.getUserName());
             }
-            return "redirect:/main.html";
+            return "redirect:/index.html";
         } else {
             model.addAttribute("msg", "Invalid login information. Please try again.");
             return "login";
         }
     }
 
-    @RequestMapping("/signup")
+    @RequestMapping("/logout")
     public String signup(HttpSession session) {
         Object isLogin = session.getAttribute("loginUser");
         if (isLogin != null) {
             session.removeAttribute("loginUser");
-            return "redirect:/main.html";
+            return "redirect:/index.html";
         }
         return "index";
     }

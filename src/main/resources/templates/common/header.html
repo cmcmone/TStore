@@ -19,8 +19,10 @@
             </a>
             <div class="myAcc-drop-down-content">
               <ul>
-                <a th:href="@{/myaccount}"><li>Your Order</li></a>
-                <a th:href="@{/signup}"><li>Sign up</li></a>
+                <li><a th:href="@{/myaccount}">Your Order</a></li>
+                <li th:if="${session.loginUser == null}">
+                  <a th:href="@{/signup}">Sign up</a>
+                </li>
                 <li th:if="${session.loginUser != null}">
                   <a th:href="@{/logout}">Logout</a>
                 </li>

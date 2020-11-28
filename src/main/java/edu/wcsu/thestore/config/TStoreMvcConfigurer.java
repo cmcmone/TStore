@@ -25,6 +25,7 @@ public class TStoreMvcConfigurer implements WebMvcConfigurer {
 
         registry.addViewController("/register.html").setViewName("register");
         registry.addViewController("/register").setViewName("register");
+        registry.addViewController("/signup").setViewName("register");
 
         registry.addViewController("/cart.html").setViewName("cart");
         registry.addViewController("/cart").setViewName("cart");
@@ -38,8 +39,9 @@ public class TStoreMvcConfigurer implements WebMvcConfigurer {
                 .excludePathPatterns("/", "/assets/**", "/favicon.ico", "/webjars/**")
                 .excludePathPatterns("/index.html", "/index", "/main.html", "/main")
                 .excludePathPatterns("/login", "/login.html")
-                .excludePathPatterns("/register.html", "/register")
+                .excludePathPatterns("/register.html", "/register", "/signup")
                 .excludePathPatterns("/details.html", "/details")
+                .excludePathPatterns("/products.html", "/products", "/product")
                 .excludePathPatterns("/error", "/error.html", "/404", "/404.html");
     }
 }

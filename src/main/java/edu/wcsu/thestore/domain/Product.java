@@ -41,4 +41,7 @@ public class Product {
 
     @Column(name = "img_path", nullable = false)
     private String imgPath;
+
+    @Column(name = "shortname", nullable = false)
+    private String shortProductName;
 }

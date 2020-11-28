@@ -26,14 +26,14 @@
   <!-- ========================
     Product Details Area Start 
     ===========================-->
-  <div class="product-area product-details-section clear">
+  <div class="product-area product-details-section clear" th:each="product : ${product}">
     <div class="container">
       <div class="left-image">
-        <img src="/assets/images/product/product-2.jpg" alt="">
+        <img th:src="${product.imgPath}" alt="">
       </div>
       <div class="right-details">
         <div class="product-head">
-          <h1 class="product-title">Porro quisquam eget feugiat pretium</h1>
+          <h1 class="product-title" th:text="${product.shortProductName}"></h1>
         </div>
         <div class="rating-meta">
           <div class="rating">
@@ -46,13 +46,11 @@
         </div>
 
         <div class="price-box">
-          <span class="regular-price">$30.00</span>
+          <span class="regular-price" th:text="${product.cost}"></span>
         </div>
 
         <div class="product-description">
-          <p>Porro first 4K UHD Camcorder, the GX10 has a compact and portable design that delivers outstanding video
-            quality with remarkable detail. With a combination of incredible features and functionality, the GX10 is the
-            ideal camcorder for aspiring filmmakers.</p>
+          <p th:text="${product.productName}"></p>
         </div>
 
         <div class="product-packeges">
@@ -81,12 +79,7 @@
         <div class="product_description_wrap mt-20">
           <div class="product_desc">
             <h2 class="last-title mb-20">Details</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis noexercit ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-              id.
-            </p>
+            <p th:text="${product.description}"></p>
           </div>
         </div>
       </div>
