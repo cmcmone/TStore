@@ -25,6 +25,10 @@ public class TStoreMvcConfigurer implements WebMvcConfigurer {
 
         registry.addViewController("/register.html").setViewName("register");
         registry.addViewController("/register").setViewName("register");
+
+        registry.addViewController("/cart.html").setViewName("cart");
+        registry.addViewController("/cart").setViewName("cart");
+
     }
 
     @Override

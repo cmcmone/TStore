@@ -14,7 +14,7 @@ public class LoginHandlerInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Object loginUser = request.getSession().getAttribute("loginUser");
         if (loginUser == null) {
-            request.setAttribute("msg", "Please log in to your account!");
+            request.setAttribute("msg", "You are not logged in, please log in to your account!");
             request.getRequestDispatcher("/login.html").forward(request, response);
             return false;
         } else {
