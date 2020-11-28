@@ -1,5 +1,6 @@
 package edu.wcsu.thestore.controller;
 
+import edu.wcsu.thestore.domain.User;
 import edu.wcsu.thestore.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import java.util.Optional;
 
 /**
  * @author Ray Chen
@@ -27,7 +29,11 @@ public class LoginController {
                         HttpSession session) {
         boolean isLogin = loginService.login(email, password);
         if (isLogin) {
-            session.setAttribute("loginUser", email);
+            Optional optional = loginService.getUserName(email);
+            if (optional.isPresent()) {
+                User user = (User) optional.get();
+                session.setAttribute("loginUser", user.getUserName());
+            }
             return "redirect:/main.html";
         } else {
             model.addAttribute("msg", "Invalid login information. Please try again.");

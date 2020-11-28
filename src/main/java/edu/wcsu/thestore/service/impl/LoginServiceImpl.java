@@ -7,6 +7,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.criteria.*;
+import java.util.Optional;
 
 /**
  * @author Ray Chen
@@ -32,5 +33,20 @@ public class LoginServiceImpl implements LoginService {
             }
         };
         return loginDao.count(specification) == 1;
+    }
+
+    @Override
+    public Optional getUserName(String email) {
+        Specification specification = new Specification() {
+            @Override
+            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Path p_email = root.get("email");
+
+                Predicate p1 = criteriaBuilder.equal(p_email, email);
+                return p1;
+            }
+        };
+
+        return loginDao.findOne(specification);
     }
 }
