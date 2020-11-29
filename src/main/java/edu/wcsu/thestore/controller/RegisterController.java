@@ -32,7 +32,8 @@ public class RegisterController {
         model.addAttribute("success", !isRegister);
         if (isRegister) {
             session.setAttribute("loginUser", name);
-            return "redirect:/main.html";
+            session.setAttribute("userID", user.getUserID());
+            return "redirect:/";
         } else {
             model.addAttribute("emailMsg", "Email is already in use. Please try again.");
             return "register";

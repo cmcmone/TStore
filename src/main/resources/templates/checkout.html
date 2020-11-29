@@ -33,30 +33,30 @@
             </div>
             <div class="form_group col-12 col-md-6">
               <label class="form-label">Name <span>*</span></label>
-              <input class="input-form" type="text" th:name="username" th:value="${Address.name}">
+              <input class="input-form" type="text" th:name="username" th:value="${Address != null}?${Address.name}">
             </div>
             <div class="form_group col-12">
               <label class="form-label">Street Address <span>*</span></label>
-              <input placeholder="House number and street name" class="input-form" type="text" th:name="street" th:value="${Address.street}">
+              <input placeholder="House number and street name" class="input-form" type="text" th:name="street" th:value="${Address != null}?${Address.street}">
             </div>
 <!--            <div class="form_group col-12">-->
 <!--              <input placeholder="Apartment, suite, unit etc. (optional)" class="input-form" type="text">-->
 <!--            </div>-->
             <div class="form_group col-12">
               <label class="form-label">Town / City <span>*</span></label>
-              <input class="input-form" type="text" th:name="city" th:value="${Address.city}">
+              <input class="input-form" type="text" th:name="city" th:value="${Address != null}?${Address.city}">
             </div>
             <div class="form_group col-12">
               <label class="form-label">State / County <span>*</span></label>
-              <input class="input-form" type="text" th:name="state" th:value="${Address.state}">
+              <input class="input-form" type="text" th:name="state" th:value="${Address != null}?${Address.state}">
             </div>
             <div class="form_group col-12 col-md-6">
               <label class="form-label">Phone <span>*</span></label>
-              <input class="input-form" type="text" th:name="phone" th:value="${Address.phone}">
+              <input class="input-form" type="text" th:name="phone" th:value="${Address != null}?${Address.phone}">
             </div>
             <div class="form_group col-12 col-md-6">
               <label class="form-label">Email Address <span>*</span></label>
-              <input class="input-form" readonly="readonly" type="text" th:name="email" th:value="${Address.user.email}">
+              <input class="input-form" readonly="readonly" type="text" th:name="email" th:value="${Address != null}?${Address.user.email}">
             </div>
         </div>
         <div class="checkout-order">

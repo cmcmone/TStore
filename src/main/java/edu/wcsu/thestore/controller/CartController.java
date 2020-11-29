@@ -70,7 +70,8 @@ public class CartController {
     @RequestMapping("/addToCart")
     public String addToCart(@RequestParam(value = "productID") Long productID,
                             @RequestParam(value = "productQuantity") Integer productQuantity,
-                            HttpSession session) {
+                            HttpSession session,
+                            Model model) {
         Optional<Product> optional = productsService.findProductByID(productID);
         if (optional.isPresent()) {
             Product product = optional.get();
@@ -80,7 +81,12 @@ public class CartController {
             cart.setCost(product.getCost());
             cart.setProduct(product);
             cartService.updateShoppingCart(cart);
+
+            List myShoppingCart = cartService.findShoppingCartByUserID((Long) session.getAttribute("userID"));
+            model.addAttribute("myCart", myShoppingCart);
+            return "cart";
+        } else {
+            return "redirect:/";
         }
-        return "redirect:/ShoppingCart";
     }
 }
