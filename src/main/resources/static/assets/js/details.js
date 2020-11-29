@@ -1,6 +1,6 @@
 function minus() {
   let quantity = document.getElementById("quantity-value");
-  if (quantity.value > 0)
+  if (quantity.value > 1)
     quantity.value--;
   document.getElementById("quantity-value").value = quantity.value;
 }

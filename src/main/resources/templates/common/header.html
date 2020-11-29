@@ -38,7 +38,7 @@
   </div>
   <div class="clear header-middle">
     <div class="middle-left">
-      <a th:href="@{/index.html}">
+      <a th:href="@{/}">
         <div class="website-logo"></div>
       </a>
     </div>
@@ -49,7 +49,7 @@
       </form>
     </div>
     <div class="middle-right">
-      <a th:href="@{/mycart}">
+      <a th:href="@{/ShoppingCart}">
         <img th:src="@{'/assets/images/shopping-carts.png'}" alt="My Cart">
         <span>My Cart</span>
       </a>
@@ -168,7 +168,7 @@
     </div>
     <div class="header-menu">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a th:href="@{/}">Home</a></li>
         <li class="menu-arrow-down">
           <a href="#">Computers</a>
           <div class="menu-dropdown-submenu">

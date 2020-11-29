@@ -20,9 +20,6 @@ public class ShoppingCart {
     @Column(name = "id")
     private long shoppingCartID;
 
-    @Column(name = "productID", nullable = false)
-    private long productID;
-
     @Column(name = "userID", nullable = false)
     private long userID;
 
@@ -31,4 +28,7 @@ public class ShoppingCart {
 
     @Column(name = "cost", nullable = false)
     private Double cost;
+
+    @OneToOne
+    private Product product;
 }

@@ -35,7 +35,7 @@ public class LoginController {
                 session.setAttribute("loginUser", user.getUserName());
                 session.setAttribute("userID", user.getUserID());
             }
-            return "redirect:/index.html";
+            return "redirect:/";
         } else {
             model.addAttribute("msg", "Invalid login information. Please try again.");
             return "login";
@@ -48,7 +48,7 @@ public class LoginController {
         if (isLogin != null) {
             session.removeAttribute("loginUser");
             session.removeAttribute("userID");
-            return "redirect:/index.html";
+            return "redirect:/";
         }
         return "index";
     }

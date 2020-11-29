@@ -29,7 +29,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <form action="#" class="cart-form">
+          <form th:action="@{/updateCart}" class="cart-form" th:method="POST">
             <!-- Cart Table Area Start -->
             <div class="table-desc">
               <div class="cart-page table-responsive">
@@ -45,19 +45,28 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr th:each="items : ${myCart}">
                       <td class="product-image">
-                        <a href="#">
-                          <img src="assets/images/product/product-2.jpg" alt="">
+                        <a th:href="@{'/product?id=' + ${items.product.productID}}">
+                          <img th:src="${items.product.imgPath}" alt="">
                         </a>
                       </td>
-                      <td class="product-name"><a href="#">Natus erro at congue massa commodo sit dignissim</a></td>
-                      <td class="product-price">£65.00</td>
-                      <td class="product-quantity"><label>Quantity</label> <input min="1" max="100" value="1"
-                          type="number"></td>
-                      <td class="product-total">£130.00</td>
+                      <td class="product-name">
+                        <a th:href="@{'/product?id=' + ${items.product.productID}}">
+                          <span th:text="${items.product.shortProductName}"></span>
+                        </a>
+                      </td>
+                      <td class="product-price" th:text="${items.cost}"></td>
+                      <td class="product-quantity">
+                        <label>Quantity</label>
+                        <input type="hidden" th:value="${items.shoppingCartID}" th:name="cartID">
+                        <input min="1" max="100" th:value="${items.quantity}" th:name="quantity" type="number">
+                      </td>
+                      <td class="product-total">
+                        <span th:text="'$' + ${items.quantity * items.cost}"></span>
+                      </td>
                       <td class="product-remove">
-                        <a href="#">
+                        <a th:href="@{'/delCart?id=' + ${items.shoppingCartID}}">
                           <i class="icon-delete"></i>
                         </a>
                       </td>

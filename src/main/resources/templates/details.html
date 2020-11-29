@@ -53,28 +53,32 @@
           <p th:text="${product.productName}"></p>
         </div>
 
-        <div class="product-packeges">
-          <table>
-            <tbody>
+
+        <form th:action="@{/addToCart}" th:method="GET">
+          <div class="product-packeges">
+            <table>
+              <tbody>
               <tr>
                 <td class="label"><span>Quantity</span></td>
                 <td class="value">
                   <div class="product-quantity">
                     <span class="qty-btn minus" onclick="minus();"><i class="icon-keyboard_arrow_down1"></i></span>
-                    <input type="text" class="input-qty" id="quantity-value" value="1">
+                    <input type="text" class="input-qty" id="quantity-value" th:value="1" th:name="productQuantity">
                     <span class="qty-btn plus" onclick="plus();"><i class="icon-keyboard_arrow_up"></i></span>
+                    <input type="hidden" th:value="${product.productID}" th:name="productID">
                   </div>
                 </td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="product-buttons grid_list">
-          <div class="action-link">
-            <button class="btn-secondary">Add To Cart</button>
+              </tbody>
+            </table>
           </div>
-        </div>
+
+          <div class="product-buttons grid_list">
+            <div class="action-link">
+              <button class="btn-secondary" th:type="submit">Add To Cart</button>
+            </div>
+          </div>
+        </form>
 
         <div class="product_description_wrap mt-20">
           <div class="product_desc">
