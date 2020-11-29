@@ -19,6 +19,11 @@ public class ProductsServiceImpl implements ProductsService {
     private ProductsDao productsDao;
 
     @Override
+    public void save(Product product) {
+        productsDao.save(product);
+    }
+
+    @Override
     public long numberOfProducts() {
         return productsDao.count();
     }

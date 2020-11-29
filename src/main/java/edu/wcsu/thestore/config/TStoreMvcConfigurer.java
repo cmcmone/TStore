@@ -43,6 +43,7 @@ public class TStoreMvcConfigurer implements WebMvcConfigurer {
                 .excludePathPatterns("/register.html", "/register", "/signup")
                 .excludePathPatterns("/details.html", "/details")
                 .excludePathPatterns("/products.html", "/products", "/product")
-                .excludePathPatterns("/error", "/error.html", "/404", "/404.html");
+                .excludePathPatterns("/error", "/error.html", "/404", "/404.html")
+                .excludePathPatterns("/data", "/test");
     }
 }

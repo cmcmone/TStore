@@ -13,4 +13,5 @@ public interface ProductsService {
     long numberOfProducts();
     List<Product> findAllProducts();
     Optional<Product> findProductByID(long id);
+    void save(Product product);
 }
