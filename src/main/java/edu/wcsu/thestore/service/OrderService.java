@@ -1,5 +1,7 @@
 package edu.wcsu.thestore.service;
 
+import edu.wcsu.thestore.domain.Order;
+
 import java.util.List;
 
 /**
@@ -8,4 +10,5 @@ import java.util.List;
  */
 public interface OrderService {
     List findMyOrder(Long userID);
+    Order save(Order order);
 }

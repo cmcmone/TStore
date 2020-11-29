@@ -24,7 +24,7 @@ public class Order {
     private String dateOrdered;
 
     @Column(name = "totalItems")
-    private String totalItems;
+    private Integer totalItems;
 
     @Column(name = "totalCost")
     private double totalCost;

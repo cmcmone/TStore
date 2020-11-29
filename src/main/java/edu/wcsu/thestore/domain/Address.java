@@ -20,8 +20,11 @@ public class Address {
     @Column(name = "id")
     private long addressID;
 
-    @Column(name = "userID")
-    private long userID;
+    @Column(name = "name")
+    private String Name;
+
+    @Column(name = "phone")
+    private String phone;
 
     @Column(name = "street")
     private String street;
@@ -34,4 +37,7 @@ public class Address {
 
     @Column(name = "zipcode")
     private String zipcode;
+
+    @OneToOne
+    private User user;
 }

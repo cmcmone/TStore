@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -19,8 +20,8 @@ public class OrderController {
     private OrderService orderService;
 
     @RequestMapping("/myaccount")
-    public String getMyOrder(@RequestParam("id") Long userID, Model model) {
-        List myOrder = orderService.findMyOrder(userID);
+    public String getMyOrder(HttpSession session, Model model) {
+        List myOrder = orderService.findMyOrder((Long) session.getAttribute("userID"));
         model.addAttribute("myOrder", myOrder);
         return "account";
     }

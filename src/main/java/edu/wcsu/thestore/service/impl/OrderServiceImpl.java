@@ -1,6 +1,7 @@
 package edu.wcsu.thestore.service.impl;
 
 import edu.wcsu.thestore.dao.OrderDao;
+import edu.wcsu.thestore.domain.Order;
 import edu.wcsu.thestore.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
@@ -31,5 +32,10 @@ public class OrderServiceImpl implements OrderService {
         };
 
         return orderDao.findAll(specification);
+    }
+
+    @Override
+    public Order save(Order order) {
+        return orderDao.save(order);
     }
 }
