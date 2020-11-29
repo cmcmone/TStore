@@ -1,10 +1,7 @@
 package edu.wcsu.thestore.controller;
 
 import edu.wcsu.thestore.domain.*;
-import edu.wcsu.thestore.service.AddressService;
-import edu.wcsu.thestore.service.CartService;
-import edu.wcsu.thestore.service.OrderLineService;
-import edu.wcsu.thestore.service.OrderService;
+import edu.wcsu.thestore.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +13,7 @@ import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Ray Chen
@@ -34,6 +32,9 @@ public class CheckoutController {
 
     @Autowired
     private AddressService addressService;
+
+    @Autowired
+    private LoginService loginService;
 
     @RequestMapping("/checkout")
     public String checkout(HttpSession session, Model model) {
@@ -61,6 +62,13 @@ public class CheckoutController {
                           @RequestParam("phone") String phone,
                           HttpSession session) {
         Address myAddress = addressService.getUserAddress((Long) session.getAttribute("userID"));
+        if (myAddress == null) {
+            myAddress = new Address();
+        }
+        Optional<User> user = loginService.findUserById((Long) session.getAttribute("userID"));
+        if (user.isPresent()) {
+            myAddress.setUser(user.get());
+        }
         myAddress.setName(username);
         myAddress.setStreet(street);
         myAddress.setCity(city);

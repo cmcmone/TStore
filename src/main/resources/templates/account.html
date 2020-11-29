@@ -60,7 +60,8 @@
                       <td th:text="${order['dateOrdered']}"></td>
                       <td th:text="${order['status']}"></td>
                       <td th:text="${order['totalCost']}"></td>
-                      <td><a class="btn btn-secondary" href="cart.html">view</a></td>
+<!--                      <td><a class="btn btn-secondary" th:href="@{'/history?id=' + ${order.orderID}}">view</a></td>-->
+                      <td><a class="btn btn-secondary" th:href="@{'#'}">view</a></td>
                     </tr>
                   </tbody>
                 </table>

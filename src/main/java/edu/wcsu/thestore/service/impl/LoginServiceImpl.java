@@ -49,4 +49,18 @@ public class LoginServiceImpl implements LoginService {
 
         return loginDao.findOne(specification);
     }
+
+    @Override
+    public Optional findUserById(Long id) {
+        Specification specification = new Specification() {
+            @Override
+            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Path p_id = root.get("userID");
+
+                Predicate p1 = criteriaBuilder.equal(p_id, id);
+                return p1;
+            }
+        };
+        return loginDao.findOne(specification);
+    }
 }

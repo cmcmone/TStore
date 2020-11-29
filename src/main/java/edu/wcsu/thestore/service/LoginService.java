@@ -1,5 +1,7 @@
 package edu.wcsu.thestore.service;
 
+import edu.wcsu.thestore.domain.User;
+
 import java.util.Optional;
 
 /**
@@ -9,4 +11,5 @@ import java.util.Optional;
 public interface LoginService {
     boolean login(String email, String password);
     Optional getUserName(String email);
+    Optional<User> findUserById(Long id);
 }
