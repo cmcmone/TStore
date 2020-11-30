@@ -15,7 +15,7 @@
     <script type="text/javascript" th:src="@{assets/js/footer.js}"></script>
 
     <link rel="stylesheet" type="text/css" th:href="@{assets/css/index.css}">
-    <script type="text/javascript" th:src="@{assets/js/index.js}"></script>
+    <script type="text/javascript" th:src="@{assets/js/products.js}"></script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                     <div class="product-thing-tab slick-custom-default tab-pane fade show active" id="four">
 
                         <!-- Single-Product-Start -->
-                        <div class="item-product" th:each="product : ${categorizedProducts}">
+                        <div class="item-product" th:each="product : ${products}">
                             <div class="product-thumb">
                                 <a th:href="@{'/product?id=' + ${product['productID']}}">
                                     <img th:src="${product['imgPath']}" alt="" class="img-fluid">

@@ -14,5 +14,6 @@ public interface ProductsService {
     List<Product> findAllProducts();
     Optional<Product> findProductByID(long id);
     List<Product> findProductByCatagory(String catagory);
+    List<Product> findProductByCatagoryAndVendor(String catagory,String vendor);
     void save(Product product);
 }

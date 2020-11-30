@@ -30,8 +30,8 @@ public class Product {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @Column(name = "vendorID")
-    private long vendorID;
+    @JoinColumn(name = "vendorName")
+    private String vendorName;
 
     @Column(name = "category", nullable = false)
     private String category;

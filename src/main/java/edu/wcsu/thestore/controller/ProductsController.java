@@ -45,10 +45,24 @@ public class ProductsController {
 
 
     @RequestMapping("/products")
-    public String showProductDetail(@RequestParam("category") String productCategory, Model model) {
-        List<Product> catagorizedProducts = productsService.findProductByCatagory(productCategory);
-        model.addAttribute("categorizedProducts", catagorizedProducts);
+    public String showProductsByCatagory(@RequestParam("category") String productCategory,
+                                         @RequestParam("vendor") String productVendor,
+                                         Model model) {
+
+        if(productCategory.isEmpty() && productVendor.isEmpty()){
+            List<Product> allProducts = productsService.findAllProducts();
+            model.addAttribute("products", allProducts);
+        }
+        else if(productVendor.isEmpty()){
+            List<Product> catagorizedProducts = productsService.findProductByCatagory(productCategory);
+            model.addAttribute("products", catagorizedProducts);
+        }
+        else{
+            List<Product> catagorizedProducts = productsService.findProductByCatagoryAndVendor(productCategory,productVendor);
+            model.addAttribute("products", catagorizedProducts);
+        }
         System.out.println(productCategory);
+        System.out.println(productVendor);
         return "products";
     }
 

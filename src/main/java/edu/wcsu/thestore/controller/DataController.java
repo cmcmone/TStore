@@ -28,7 +28,7 @@ public class DataController {
                     "PROGRAM DETAILS: When you add this offer to cart, it will reflect 3 items: the iPhone, SIM kit, and carrier subscription\n" +
                     "Ceramic Shield, tougher than any smartphone glass\n" +
                     "A14 Bionic chip, the fastest chip ever in a smartphone",
-                    1,
+                    "Apple",
                     "Cell Phones",
                     899.99,
                     "https://m.media-amazon.com/images/I/71fVoqRC0wL._FMwebp__.jpg",
@@ -42,7 +42,7 @@ public class DataController {
                             "Android OS, Exynos 7885, Octa-Core (Dual Core 1.8 GHz Cortex-A73 & Hexa Core 1.6 GHz Cortex-A53), Mali-G71\n" +
                             "3G HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100, 4G LTE band 1(2100), 2(1900), 3(1800), 4(1700/2100), 5(850), 7(2600), 8(900), 12(700), 13(700), 17(700), 20(800), 28(700), 38(2600), 40(2300), 41(2500), 66(1700/2100)\n" +
                             "International Model - No Warranty in US. Compatible with Most GSM Carriers like T-Mobile, AT&T, MetroPCS, etc. Will NOT work with CDMA Carriers Such as Verizon, Sprint, Boost.",
-                    2,
+                    "Samsung",
                     "Cell Phones",
                     282.0,
                     "https://images-na.ssl-images-amazon.com/images/I/616lmgR9dwL._AC_SL1000_.jpg",
@@ -56,7 +56,7 @@ public class DataController {
                             "128GB Internal memory 4GB RAM Micro SD up to 128GB; Mediatek Helio P60 Octa-Core 2.0GHz processor | 64 bit with AI technology\n" +
                             "Super 4,000mAh battery with 18W Ultra Quick Charge, Wireless Charging Compatible, and Fingerprint sensor\n" +
                             "4G LTE (1/2/3/4/5/7/8/12/13/17/28) 3G: (850/900/1700/1900/2100): US compatibility Nationwide on all GSM Networks including AT&T, T-Mobile, Cricket, Metro PCS, and others. Not compatible with CDMA Networks like Verizon, Sprint and Boost Mobile)",
-                    3,
+                    "BLU",
                     "Cell Phones",
                     199.99,
                     "https://images-na.ssl-images-amazon.com/images/I/81cH%2BNRSZGL._AC_SL1500_.jpg",
@@ -66,7 +66,7 @@ public class DataController {
                     "Huawei Nova 5T (128GB, 8GB) 6.26\" LCD, Kirin 980, 48MP Quad Camera, 22.5W Fast Charge, Dual SIM GSM Unlocked Global 4G LTE International Model YAL-L21 (Black)",
                     100,
                     "Huawei Nova 5T (128GB, 8GB) 6.26\" LCD, Kirin 980, 48MP Quad Camera, 22.5W Fast Charge, Dual SIM GSM Unlocked Global 4G LTE International Model YAL-L21 (Black)",
-                    4,
+                    "Huawei",
                     "Cell Phones",
                     333.99,
                     "https://images-na.ssl-images-amazon.com/images/I/6119fiwoLML._AC_SL1000_.jpg",
@@ -80,7 +80,7 @@ public class DataController {
                             "1 USB 3.1 Gen 1 port, 2 USB 2.0 ports & 1 HDMI port with HDCP support\n" +
                             "802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life\n" +
                             "Windows 10 in S mode. Maximum power supply wattage: 65 Watts",
-                    5,
+                    "Acer",
                     "Laptop",
                     364.99,
                     "https://images-na.ssl-images-amazon.com/images/I/71vvXGmdKWL._AC_SL1500_.jpg",
@@ -95,7 +95,7 @@ public class DataController {
                             "Ergonomic backlit chiclet keyboard with fingerprint sensor activated via Windows hello.Bluetooth 4.1\n" +
                             "Exclusive Ergolift design for an improved typing position\n" +
                             "Comprehensive connections including USB 3.1 Type-C , USB 3.1 Type-A, USB 2.0, and HDMI; Gigabit Wi-Fi 5 (802.11ac) (USB transfer speed may vary. Learn more at ASUS website)",
-                    6,
+                    "ASUS",
                     "Laptop",
                     498.99,
                     "https://images-na.ssl-images-amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg",
@@ -111,7 +111,7 @@ public class DataController {
                             "Ultrafast SSD\n" +
                             "Intel UHD Graphics 630\n" +
                             "Six-speaker system with force-cancelling woofers",
-                    1,
+                    "Apple",
                     "Laptop",
                     2099.0,
                     "https://images-na.ssl-images-amazon.com/images/I/71UItVa0VmL._AC_SL1500_.jpg",
@@ -124,7 +124,7 @@ public class DataController {
                             "TRILUMINOS Display: See exactly what the creator intended with advanced color and gradation.\n" +
                             "FULL ARRAY LED with local dimming: Brighter highlights and detailed dark scenes along with realistic contrast enhanced by X-tended Dynamic Range.\n" +
                             "GAME MODE: Take your PlayStation experience to the next level with a Sony 4K gaming TV featuring dedicated Game Mode for a smoother, more responsive gaming experience.",
-                    7,
+                    "Sony",
                     "Television",
                     1452.68,
                     "https://images-na.ssl-images-amazon.com/images/I/81x6u8MEm4L._AC_SL1500_.jpg",
@@ -138,7 +138,7 @@ public class DataController {
                             "Intel Wireless Wi-Fi 6 AX200 802.11ax Dual-Band 2.4GHz and 5GHz featuring 2x2 MU-MIMO technology | Bluetooth 5.1 | 10/100/1000 Gigabit Ethernet LAN\n" +
                             "1 - USB 3.2 Type C Gen 1 port (up to 5 Gbps) (Front) | 5 - USB 3.2 Gen 1 Ports (1 Front and 4 Rear) | 2 - USB 2.0 Ports (Rear) | 2 - HDMI Ports\n" +
                             "Windows 10 Home (USB Keyboard and Mouse Included)",
-                    0,
+                    "Acer",
                     "Desktop",
                     529.99,
                     "https://images-na.ssl-images-amazon.com/images/I/61A%2BK1MjTeL._AC_SL1500_.jpg",
@@ -150,7 +150,7 @@ public class DataController {
                     "Lightning Fast: Powered by Intel's top of the line Core i5 series processor and loaded with 16 GB of RAM, this machine will outperform the competition in any situation.\n" +
                             "Massive Storage: Packed with 2 TB of hard drive space, you can store all of the apps, games, photos, music and movies that you need.\n" +
                             "Get Connected: Comes with a vibrant 20-inch LCD Monitor (Brands may vary). The included Bluetooth 4.0 Adapter, Wi-Fi Adapter and Keyboard & Mouse will have you up and running with ease, keeping you connected. Microsoft's latest and best OS to date, Windows 10 Professional, will maximize the power and utility of your new machine.",
-                    0,
+                    "Dell",
                     "Desktop",
                     332.07,
                     "https://images-na.ssl-images-amazon.com/images/I/71ySan4CA8L._AC_SL1500_.jpg",
@@ -164,7 +164,7 @@ public class DataController {
                             "Connectivity: 4 x USB 3.0 2 x USB 2.0 1x RJ-45 Network Ethernet 10/100/1000 Audio: 7.1 Channel\n" +
                             "Special Add-Ons: Tempered Glass RGB Gaming Case 802.11AC Wi-Fi Included 16 Color RGB Lighting Case Free iBuyPower Gaming Keyboard & RGB Gaming Mouse No Bloatware\n" +
                             "Warranty: 1 year parts & labor + free lifetime US tech support; Assembled in the U.S.A",
-                    0,
+                    "iBUYPOWER",
                     "Desktop",
                     999.99,
                     "https://images-na.ssl-images-amazon.com/images/I/715zrA5cmLL._AC_SL1500_.jpg",
@@ -177,7 +177,7 @@ public class DataController {
                             "COMPLETE SET WITH MORE CONVENIENCE - You will receive one Lenovo high performance PC, one 19 inch LCD monitor(Brands May Vary), one Keyboard and one mouse that you could start work or study at once.\n" +
                             "POWERFUL PROCESSOR & SUPERIOR STORAGE AND MEMORY - Built with an Intel Quad Core i5 processor, up to 3.4 GHz, which you can expect fast, reliable performance and an exceptional PC experience; 1 TB storage space to save your favorite media and still have tons of room to work. 8 GB DDR3 RAM will help you zip through your tasks in a hurry.\n" +
                             "MULTI LANGUAGE WINDOWS 10 PROFESSIONAL & OFFICE 365 FREE TRAIL - A new, clean installation completely free of bloatware come with multi languages in English/Spanish/French which meet more demands. 30 Days Office 365 free trails helps your work easy and efficient.",
-                    0,
+                    "Lenovo",
                     "Desktop",
                     219.89,
                     "https://images-na.ssl-images-amazon.com/images/I/71WOvnIvHRL._AC_SL1500_.jpg",
@@ -190,7 +190,7 @@ public class DataController {
                             "The 1920 x 1080 Full HD display gives you an outstanding viewing experience, from wide angles, too. The narrow bezels are just 9.5 mm at their thinnest for a huge 90% screen-to-body ratio for more screen and fewer distractions.\n" +
                             "For PC peripherals, such as a mouse, keyboard, and backup drive, the IdeaCentre A340-22IGM has plenty of ports. In addition to USB 3.1 and 2.0, this all-in-one PC has a 3-in-1 card reader and HDMI out, should you need a second screen\n" +
                             "Work, entertainment, or video calls – the eye-catching IdeaCentre A340-22IGM will look and perform great anywhere. With its stylish stand and base, this all-in-one desktop computer will save much-needed desk space.",
-                    0,
+                    "Lenovo",
                     "All-in-One",
                     699.00,
                     "https://images-na.ssl-images-amazon.com/images/I/81VyuMkh32L._AC_SL1500_.jpg",
@@ -204,7 +204,7 @@ public class DataController {
                             "1080p Full HD Resolution excellent detail, color, and contrast\n" +
                             "Direct lit LED produces great picture quality with 60Hz refresh Rate for fast moving action scenes with virtually no Motion blur\n" +
                             "Inputs: 3 HDMI, 1 USB, RF, Composite, Headphone Jack, Optical audio Out",
-                    0,
+                    "TLC",
                     "Television",
                     179.99,
                     "https://images-na.ssl-images-amazon.com/images/I/71YZlXXFktL._AC_SL1500_.jpg",
@@ -217,7 +217,7 @@ public class DataController {
                             "Measuring 28.7 x 17 x 2.9 inches and 8.6 pounds (28.7 x 18.8 x 7.6 inches with included stand, LxWxH and 8.8 pounds), the 32h5500f has a 1-year manufacturer's warranty, and includes a remote (batteries included), power cable, and quick start guide.\n" +
                             "Combining sharp 720p picture quality, the voice-enabled android TV platform, built-in Wi-Fi, and innovative technologies, Hisense h55 series smart TVs are great for all your needs — streaming, cable, satellite, gaming, and free over-the-air TV.\n" +
                             "Control the TV via the easy-to-use voice-enabled remote — Open or search for apps, control the volume and inputs, or search for your favorite TV shows and movies.",
-                    0,
+                    "Hisense",
                     "Television",
                     129.99,
                     "https://images-na.ssl-images-amazon.com/images/I/8161gQWMnNL._AC_SL1500_.jpg",
@@ -231,7 +231,7 @@ public class DataController {
                             "Product Size (WxHxD) with Stand: 43.9 x 11.6\" x 27.5\" | Product Size (WxHxD) without stand: 43.9\" x 3.0\" x 25.2\" | Product Weight without stand: 26.0 lbs | Product Weight with stand: 26.7 lbs\n" +
                             "Roku Smart TV Platform: Roku Smart TV platform provides access to thousands of streaming channels\n" +
                             "Auto Game Mode for an optimized fast-response gaming experience",
-                    0,
+                    "TCL",
                     "Television",
                     399.99,
                     "https://images-na.ssl-images-amazon.com/images/I/91tMNAWWsPL._AC_SL1500_.jpg",
@@ -243,7 +243,7 @@ public class DataController {
                     "Memc 120 with a MEMC 120 (Motion Estimation and Motion Compensation), all action-packed sequences will flow smoothly from frame to frame for the ultimate experience. Enjoy every moment of the auto enhanced picture quality especially for all your favorite sports, video games, and movies packed with action\n" +
                             "Superior 4K Picture Enter an unrivaled world of color variation, impressive contrasts, and image detail with 4K resolution (3840 x 2160). Sceptre 4K delivers a superior picture with 8 million pixels, four times more than a 1080P Full HDTV.Brightness:273 cd/m2\n" +
                             "HDCP 2. 2 HDCP 2. 2 ensures that all the 4K content that is transferred from a source (Blu-Ray player, DVD player, etc. ) to the display (the TV) is secured with copyright protection. Bearing your convenience and future use in mind, Sceptre is compliant with HDCP 2. 2 on most of its 4K UHD TVs.",
-                    0,
+                    "Sceptre",
                     "Television",
                     229.98,
                     "https://images-na.ssl-images-amazon.com/images/I/91F2-%2B8KynL._AC_SL1500_.jpg",
@@ -256,7 +256,7 @@ public class DataController {
                             "Up to 3 day battery *. Go up to three days1 on a single charge thanks to a 5000 mAh battery.\n" +
                             "16 MP triple camera system. Capture ultra-wide angle panoramas, sharper portraits, and super detailed close-up shots.\n" +
                             "Dual Stereo Speakers tuned by Dolby. Enjoy 4x more crystal-clear audio that’s 4x more powerful2 with dual stereo speakers tuned by Dolby.",
-                    0,
+                    "Motorola",
                     "Cell Phones",
                     179.99,
                     "https://images-na.ssl-images-amazon.com/images/I/81ZronJUUPL._AC_SL1500_.jpg",
@@ -270,7 +270,7 @@ public class DataController {
                             "Charge your cell phone wirelessly[6] or use it to wirelessly charge other Qi-certified devices[7]\n" +
                             "The all day battery can last up to 48 hours with Extreme Battery Saver[8]\n" +
                             "Your phone will automatically receive the latest OS and security updates for at least 3 years;[9] the custom-made Titan M chip helps secure the operating system and sensitive data, like passwords",
-                    0,
+                    "Google",
                     "Cell Phones",
                     649.00,
                     "https://images-na.ssl-images-amazon.com/images/I/81kmE1z%2BsaL._AC_SL1500_.jpg",
@@ -282,7 +282,7 @@ public class DataController {
                     "Cyberpunk 2077 is an open-world, action-adventure story set in Night City\n" +
                             "Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City\n" +
                             "Take the riskiest job of your life and go after a prototype implant that is the key to immortality",
-                    0,
+                    "EA",
                     "Games",
                     49.94,
                     "https://images-na.ssl-images-amazon.com/images/I/81iR0aGNJ5L._SL1500_.jpg",

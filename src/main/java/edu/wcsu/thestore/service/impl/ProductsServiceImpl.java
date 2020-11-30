@@ -58,5 +58,23 @@ public class ProductsServiceImpl implements ProductsService {
 
     }
 
+    @Override
+    public List<Product> findProductByCatagoryAndVendor(String category,String vendor) {
+
+        Specification specification = new Specification() {
+            @Override
+            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Path p_category = root.get("category");
+                Path p_vendor = root.get("vendorName");
+                Predicate p1 = criteriaBuilder.equal(p_category,category);
+                Predicate p2 = criteriaBuilder.equal(p_vendor,vendor);
+                Predicate predicate = criteriaBuilder.and(p1,p2);
+                return predicate;
+            }
+        };
+
+        return productsDao.findAll(specification);
+
+    }
 
 }

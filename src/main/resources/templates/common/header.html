@@ -172,9 +172,9 @@
           <a href="#">Computers</a>
           <div class="menu-dropdown-submenu">
             <ul>
-              <li><a th:href="@{'/products?category=Laptop'}">Laptop</a></li>
-              <li><a th:href="@{'/products?category=Desktop'}">Desktops</a></li>
-              <li><a th:href="@{'/products?category=2-in-1'}">2-in-1s</a></li>
+              <li><a th:href="@{'/products?category=Laptop&vendor='}">Laptop</a></li>
+              <li><a th:href="@{'/products?category=Desktop&vendor='}">Desktops</a></li>
+              <li><a th:href="@{'/products?category=2-in-1&vendor='}">2-in-1s</a></li>
             </ul>
           </div>
         </li>
@@ -182,9 +182,9 @@
           <a href="#">Electronics</a>
           <div class="menu-dropdown-submenu-longer">
             <ul>
-              <li><a th:href="@{'/products?category=Television'}">TV & Video</a></li>
-              <li><a th:href="@{'/products?category=Cell Phones'}">Phones & Accessories</a></li>
-              <li><a th:href="@{'/products?category=Games'}">Video Games</a></li>
+              <li><a th:href="@{'/products?category=Television&vendor='}">TV & Video</a></li>
+              <li><a th:href="@{'/products?category=Cell Phones&vendor='}">Phones & Accessories</a></li>
+              <li><a th:href="@{'/products?category=Games&vendor='}">Video Games</a></li>
             </ul>
           </div>
         </li>
@@ -192,9 +192,9 @@
           <a href="#">Games</a>
           <div class="menu-dropdown-submenu-middle">
             <ul>
-              <li><a href="">Roblox</a></li>
-              <li><a href="">Mojang AB</a></li>
-              <li><a href="">Electronic Arts</a></li>
+              <li><a th:href="@{'/products?category=Games&vendor=Roblox'}">Roblox</a></li>
+              <li><a th:href="@{'/products?category=Games&vendor=Mojang'}">Mojang AB</a></li>
+              <li><a th:href="@{'/products?category=Games&vendor=EA'}">Electronic Arts</a></li>
             </ul>
           </div>
         </li>
