@@ -13,5 +13,6 @@ public interface ProductsService {
     long numberOfProducts();
     List<Product> findAllProducts();
     Optional<Product> findProductByID(long id);
+    List<Product> findProductByCatagory(String catagory);
     void save(Product product);
 }

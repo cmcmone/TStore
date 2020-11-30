@@ -21,7 +21,7 @@ public class ProductsController {
     @Autowired
     private ProductsService productsService;
 
-    @RequestMapping(value = {"/", "/products"})
+    @RequestMapping("/")
     public String showAllProducts(Model model) {
         long count = productsService.numberOfProducts();
         model.addAttribute("count", count);
@@ -42,4 +42,16 @@ public class ProductsController {
         }
         return "details";
     }
+
+
+    @RequestMapping("/products")
+    public String showProductDetail(@RequestParam("category") String productCategory, Model model) {
+        List<Product> catagorizedProducts = productsService.findProductByCatagory(productCategory);
+        model.addAttribute("categorizedProducts", catagorizedProducts);
+        System.out.println(productCategory);
+        return "products";
+    }
+
+
+
 }
