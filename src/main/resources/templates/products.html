@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TStore - The online store</title>
+
+    <script type="text/javascript" th:src="@{assets/js/common.js}"></script>
+
+    <link rel="stylesheet" type="text/css" th:href="@{assets/css/header.css}">
+    <script type="text/javascript" th:src="@{assets/js/header.js}"></script>
+
+    <link rel="stylesheet" type="text/css" th:href="@{assets/css/footer.css}">
+    <script type="text/javascript" th:src="@{assets/js/footer.js}"></script>
+
+    <link rel="stylesheet" type="text/css" th:href="@{assets/css/index.css}">
+    <script type="text/javascript" th:src="@{assets/js/index.js}"></script>
+</head>
+
+<body>
+<!-- Header Area Start -->
+<header th:replace="common/header.html"></header>
+<!-- Header Area End -->
+
+<!-- Main Body Start -->
+
+<div class="clear main">
+
+</div>
+
+<!-- =================
+  Category Product Area Start
+  =====================-->
+<div class="product-category-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tab-content">
+                    <div class="product-thing-tab slick-custom-default tab-pane fade show active" id="four">
+
+                        <!-- Single-Product-Start -->
+                        <div class="item-product" th:each="product : ${categorizedProducts}">
+                            <div class="product-thumb">
+                                <a th:href="@{'/product?id=' + ${product['productID']}}">
+                                    <img th:src="${product['imgPath']}" alt="" class="img-fluid">
+                                </a>
+                                <div class="box-label">
+                                    <div class="label-product-new">
+                                        <span>New</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-caption">
+                                <div class="product-name">
+                                    <a th:href="@{'/product?id=' + ${product['productID']}}" th:text="${product['shortProductName']}"></a>
+                                </div>
+                                <div class="rating">
+                                    <span class="yellow"><i class="icon-star"></i></span>
+                                    <span class="yellow"><i class="icon-star"></i></span>
+                                    <span class="yellow"><i class="icon-star"></i></span>
+                                    <span class="yellow"><i class="icon-star"></i></span>
+                                    <span class="yellow"><i class="icon-star"></i></span>
+                                </div>
+                                <div class="price-box text-right">
+                                    <span class="regular-price" th:text="${product['cost']}"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single-Product-End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================
+Product Area End
+=====================-->
+
+<!-- Main Body End -->
+
+<!-- Footer Area Start -->
+<footer th:replace="common/footer.html"></footer>
+<!-- Footer Area End -->
+</body>
+
+</html>
