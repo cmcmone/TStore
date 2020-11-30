@@ -26,15 +26,8 @@ public class OrderLineServiceImpl implements OrderLineService {
 
     @Override
     public List findOrderLineByOrderID(Long orderID) {
-        Specification specification = new Specification() {
-            @Override
-            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
-                Path p_orderID = root.get("orderID");
-
-                Predicate p1 = criteriaBuilder.equal(p_orderID, orderID);
-                return p1;
-            }
-        };
-        return orderLineDao.findAll(specification);
+        return orderLineDao.findAllCart(orderID);
     }
 }
+
+

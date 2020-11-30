@@ -99,7 +99,8 @@ public class CheckoutController {
             OrderLine orderLine = new OrderLine();
             orderLine.setOrderID(saved.getOrderID());
             orderLine.setCost(obj.getCost());
-            orderLine.setProductID(obj.getProduct().getProductID());
+            orderLine.setProduct(obj.getProduct());
+                    //setProductID(obj.getProduct().getProductID());
             orderLine.setQuantity(obj.getQuantity());
             orderLineService.saveOrderLine(orderLine);
             cartService.delShoppingCartByID(obj.getShoppingCartID());

@@ -172,4 +172,7 @@ tr {
   color: #fff;
 }
 
-
+.product-image a img {
+  max-width: 160px;
+  max-height: 124px;
+}

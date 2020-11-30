@@ -35,7 +35,7 @@
             <li><a class="nav-link" data-toggle="tab" href="#downloads">Downloads</a></li>
             <li><a class="nav-link" data-toggle="tab" href="#address">Addresses</a></li>
             <li><a class="nav-link" data-toggle="tab" href="#account-details">Account details</a></li>
-            <li><a class="nav-link" href="login.html">logout</a></li>
+            <li><a class="nav-link" th:href="@{/logout}">Logout</a></li>
           </ul>
         </div>
         <div class="my-account-right">
@@ -60,8 +60,8 @@
                       <td th:text="${order['dateOrdered']}"></td>
                       <td th:text="${order['status']}"></td>
                       <td th:text="${order['totalCost']}"></td>
-<!--                      <td><a class="btn btn-secondary" th:href="@{'/history?id=' + ${order.orderID}}">view</a></td>-->
-                      <td><a class="btn btn-secondary" th:href="@{'#'}">view</a></td>
+                      <td><a class="btn btn-secondary" th:href="@{'/history?id=' + ${order.orderID}}">view</a></td>
+
                     </tr>
                   </tbody>
                 </table>

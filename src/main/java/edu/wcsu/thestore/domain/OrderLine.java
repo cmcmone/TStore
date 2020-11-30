@@ -23,8 +23,8 @@ public class OrderLine {
     @Column(name = "orderID", nullable = false)
     private long orderID;
 
-    @Column(name = "productID", nullable = false)
-    private long productID;
+    @OneToOne
+    private Product product;
 
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
