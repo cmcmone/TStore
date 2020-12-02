@@ -102,10 +102,19 @@ public class ProductsServiceImpl implements ProductsService {
             @Override
             public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 Path p_name = root.get("productName");
+                Path p_description = root.get("description");
+                Path p_vendorName = root.get("vendorName");
+                Path p_category = root.get("category");
+                Path p_shortProductName = root.get("shortProductName");
 
                 Predicate p1 = criteriaBuilder.like(p_name,"%"+search+"%");
+                Predicate p2 = criteriaBuilder.like(p_description, "%"+search+"%");
+                Predicate p3 = criteriaBuilder.like(p_vendorName, "%"+search+"%");
+                Predicate p4 = criteriaBuilder.like(p_category, "%"+search+"%");
+                Predicate p5 = criteriaBuilder.like(p_shortProductName, "%"+search+"%");
 
-                return p1;
+                Predicate predicate = criteriaBuilder.or(p1,p2,p3,p4,p5);
+                return predicate;
             }
         };
 
