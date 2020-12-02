@@ -335,7 +335,7 @@ public class DataController {
                     "GamesPS4",
                     49.94,
                     "https://images-na.ssl-images-amazon.com/images/I/81DkWnEV5-L._SL1500_.jpg",
-                    "Star Wars BF2"));
+                    "Madden NFL 21"));
         }};
 
         for (Product item : products) {
