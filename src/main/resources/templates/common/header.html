@@ -67,30 +67,30 @@
             <a href="#">Computers</a>
             <ul class="detail-sub-menu">
               <li class="detail-sub-menu-title">
-                <a href="#">Laptops</a>
+                <a th:href="@{'/products?category=Laptop&vendor='}">Laptops</a>
                 <ul>
-                  <li><a href="#">PC Laptops</a></li>
-                  <li><a href="#">MacBooks</a></li>
-                  <li><a href="#">Microsoft Surface Laptops</a></li>
-                  <li><a href="#">Chromebooks</a></li>
+                  <li><a th:href="@{'/products?category=LaptopMS&vendor='}">PC Laptops</a></li>
+                  <li><a th:href="@{'/products?category=Laptop&vendor=Apple'}">MacBooks</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Microsoft'}">Microsoft Surface Laptops</a></li>
+                  <li><a th:href="@{'/products?category=Laptop&vendor=Google'}">Chromebooks</a></li>
                 </ul>
               </li>
               <li class="detail-sub-menu-title">
                 <a href="#">Desktops</a>
                 <ul>
-                  <li><a href="#">Computer Towers</a></li>
-                  <li><a href="#">Apple iMac, Mini & Mac Pro</a></li>
-                  <li><a href="#">Microsoft Surface Studio 2</a></li>
-                  <li><a href="#">Gaming Desktops</a></li>
+                  <li><a th:href="@{'/products?category=Desktop&vendor='}">Computer Towers</a></li>
+                  <li><a th:href="@{'/products?category=Desktop&vendor=Apple'}">Apple iMac, Mini & Mac Pro</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Microsoft'}">Microsoft Surface Studio 2</a></li>
+                  <li><a th:href="@{'/products?category=DesktopGaming&vendor='}">Gaming Desktops</a></li>
                 </ul>
               </li>
               <li class="detail-sub-menu-title">
                 <a href="#">2-in-1s</a>
                 <ul>
-                  <li><a href="#">Microsoft Surface</a></li>
-                  <li><a href="#">Lenovo</a></li>
-                  <li><a href="#">Dell</a></li>
-                  <li><a href="#">Asus</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Microsoft'}">Microsoft Surface</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Lenovo'}">Lenovo</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Dell'}">Dell</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Asus'}">Asus</a></li>
                 </ul>
               </li>
             </ul>
@@ -101,28 +101,28 @@
               <li class="detail-sub-menu-title">
                 <a href="#">TV & Video</a>
                 <ul>
-                  <li><a href="#">PC Laptops</a></li>
-                  <li><a href="#">MacBooks</a></li>
-                  <li><a href="#">Microsoft Surface Laptops</a></li>
-                  <li><a href="#">Chromebooks</a></li>
+                  <li><a th:href="@{'/products?category=LaptopMS&vendor='}">PC Laptops</a></li>
+                  <li><a th:href="@{'/products?category=Laptop&vendor=Apple'}">MacBooks</a></li>
+                  <li><a th:href="@{'/products?category=2-in-1&vendor=Microsoft'}">Microsoft Surface Laptops</a></li>
+                  <li><a th:href="@{'/products?category=Laptop&vendor=Google'}">Chromebooks</a></li>
                 </ul>
               </li>
               <li class="detail-sub-menu-title">
                 <a href="#">Phones & Accessories</a>
                 <ul>
-                  <li><a href="#">iPhone</a></li>
-                  <li><a href="#">Samsung</a></li>
-                  <li><a href="#">bluetooth headsets</a></li>
-                  <li><a href="#">wireless accessories</a></li>
+                  <li><a th:href="@{'/products?category=Cell Phone&vendor=Apple'}">iPhone</a></li>
+                  <li><a th:href="@{'/products?category=Cell Phone&vendor=Samsung'}">Samsung</a></li>
+                  <li><a th:href="@{'/products?category=Headset&vendor='}">Bluetooth Headphones</a></li>
+                  <li><a th:href="@{'/products?category=WirelessAccs&vendor='}">Wireless Accessories</a></li>
                 </ul>
               </li>
               <li class="detail-sub-menu-title">
-                <a href="#">Video Games</a>
+                <a th:href="@{'/products?category=Games&vendor='}">Video Games</a>
                 <ul>
-                  <li><a href="#">PlayStation</a></li>
-                  <li><a href="#">Xbox</a></li>
-                  <li><a href="#">PC</a></li>
-                  <li><a href="#">Nintendo</a></li>
+                  <li><a th:href="@{'/products?category=PS4&vendor='}">PlayStation</a></li>
+                  <li><a th:href="@{'/products?category=XBOX&vendor='}">Xbox</a></li>
+                  <li><a th:href="@{'/products?category=PC&vendor='}">PC</a></li>
+                  <li><a th:href="@{'/products?category=Nintendo&vendor='}">Nintendo</a></li>
                 </ul>
               </li>
             </ul>
@@ -131,24 +131,24 @@
             <a href="#">Games</a>
             <ul class="detail-sub-menu">
               <li class="detail-sub-menu-title">
-                <a href="#">Roblox</a>
+                <a th:href="@{'/products?category=Games&vendor=Roblox'}">Roblox</a>
                 <ul>
-                  <li><a href="#">Roblox Gift Card</a></li>
-                  <li><a href="#">Online Game Code</a></li>
+                  <li><a th:href="@{'/products?category=GamesGift&vendor=Roblox'}">Roblox Gift Card</a></li>
+                  <li><a th:href="@{'/products?category=GamesCode&vendor=Roblox'}">Online Game Code</a></li>
                 </ul>
               </li>
               <li class="detail-sub-menu-title">
                 <a href="#">Mojang AB</a>
                 <ul>
-                  <li><a href="#">Minecraft</a></li>
-                  <li><a href="#">Online Game Code</a></li>
+                  <li><a th:href="@{'/products?category=&vendor=Mojang'}">Minecraft</a></li>
+                  <li><a th:href="@{'/products?category=GamesCode&vendor=Mojang'}">Online Game Code</a></li>
                 </ul>
               </li>
               <li class="detail-sub-menu-title">
                 <a href="#">Electronic Arts</a>
                 <ul>
-                  <li><a href="#">Apex Legends</a></li>
-                  <li><a href="#">Online Game Code</a></li>
+                  <li><a th:href="@{'/products?category=Games&vendor=EA'}">Games</a></li>
+                  <li><a th:href="@{'/products?category=GamesCode&vendor=EA'}">Online Game Code</a></li>
                 </ul>
               </li>
             </ul>
