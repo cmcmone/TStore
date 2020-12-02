@@ -49,7 +49,7 @@ public class ProductsServiceImpl implements ProductsService {
             public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 Path p_category = root.get("category");
 
-                Predicate p1 = criteriaBuilder.equal(p_category,category);
+                Predicate p1 = criteriaBuilder.like(p_category,"%"+category+"%");
                 return p1;
             }
         };
@@ -66,10 +66,28 @@ public class ProductsServiceImpl implements ProductsService {
             public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 Path p_category = root.get("category");
                 Path p_vendor = root.get("vendorName");
-                Predicate p1 = criteriaBuilder.equal(p_category,category);
+                Predicate p1 = criteriaBuilder.like(p_category,"%"+category+"%");
                 Predicate p2 = criteriaBuilder.equal(p_vendor,vendor);
                 Predicate predicate = criteriaBuilder.and(p1,p2);
                 return predicate;
+            }
+        };
+
+        return productsDao.findAll(specification);
+
+    }
+
+    @Override
+    public List<Product> findProductByVendor(String vendor) {
+
+        Specification specification = new Specification() {
+            @Override
+            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Path p_vendor = root.get("vendorName");
+
+                Predicate p1 = criteriaBuilder.equal(p_vendor,vendor);
+
+                return p1;
             }
         };
 

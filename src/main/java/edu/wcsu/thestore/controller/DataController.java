@@ -81,7 +81,7 @@ public class DataController {
                             "802.11ac Wi-Fi; Backlit Keyboard; Up to 7.5 hours battery life\n" +
                             "Windows 10 in S mode. Maximum power supply wattage: 65 Watts",
                     "Acer",
-                    "Laptop",
+                    "LaptopMS",
                     364.99,
                     "https://images-na.ssl-images-amazon.com/images/I/71vvXGmdKWL._AC_SL1500_.jpg",
                     "Acer Aspire 5 Slim"));
@@ -96,7 +96,7 @@ public class DataController {
                             "Exclusive Ergolift design for an improved typing position\n" +
                             "Comprehensive connections including USB 3.1 Type-C , USB 3.1 Type-A, USB 2.0, and HDMI; Gigabit Wi-Fi 5 (802.11ac) (USB transfer speed may vary. Learn more at ASUS website)",
                     "ASUS",
-                    "Laptop",
+                    "LaptopMS",
                     498.99,
                     "https://images-na.ssl-images-amazon.com/images/I/81mZ4eDWYkL._AC_SL1500_.jpg",
                     "ASUS VivoBook 15"));
@@ -165,7 +165,7 @@ public class DataController {
                             "Special Add-Ons: Tempered Glass RGB Gaming Case 802.11AC Wi-Fi Included 16 Color RGB Lighting Case Free iBuyPower Gaming Keyboard & RGB Gaming Mouse No Bloatware\n" +
                             "Warranty: 1 year parts & labor + free lifetime US tech support; Assembled in the U.S.A",
                     "iBUYPOWER",
-                    "Desktop",
+                    "DesktopGaming",
                     999.99,
                     "https://images-na.ssl-images-amazon.com/images/I/715zrA5cmLL._AC_SL1500_.jpg",
                     "iBUYPOWER Gaming PC Computer"));
@@ -191,7 +191,7 @@ public class DataController {
                             "For PC peripherals, such as a mouse, keyboard, and backup drive, the IdeaCentre A340-22IGM has plenty of ports. In addition to USB 3.1 and 2.0, this all-in-one PC has a 3-in-1 card reader and HDMI out, should you need a second screen\n" +
                             "Work, entertainment, or video calls – the eye-catching IdeaCentre A340-22IGM will look and perform great anywhere. With its stylish stand and base, this all-in-one desktop computer will save much-needed desk space.",
                     "Lenovo",
-                    "All-in-One",
+                    "2-in-One",
                     699.00,
                     "https://images-na.ssl-images-amazon.com/images/I/81VyuMkh32L._AC_SL1500_.jpg",
                     "Lenovo-IdeaCentre"));
@@ -282,11 +282,60 @@ public class DataController {
                     "Cyberpunk 2077 is an open-world, action-adventure story set in Night City\n" +
                             "Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City\n" +
                             "Take the riskiest job of your life and go after a prototype implant that is the key to immortality",
-                    "EA",
-                    "Games",
+                    "CD Projekt Red",
+                    "GamesPS4",
                     49.94,
                     "https://images-na.ssl-images-amazon.com/images/I/81iR0aGNJ5L._SL1500_.jpg",
                     "Cyberpunk 2077"));
+
+            add(new Product(0,
+                    "Cyberpunk 2077 - Xbox One",
+                    100,
+                    "Cyberpunk 2077 is an open-world, action-adventure story set in Night City\n" +
+                            "Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City\n" +
+                            "Take the riskiest job of your life and go after a prototype implant that is the key to immortality",
+                    "CD Projekt Red",
+                    "GamesXBOX",
+                    49.94,
+                    "https://images-na.ssl-images-amazon.com/images/I/81KJ8RgF3GL._SL1500_.jpg",
+                    "Cyberpunk 2077"));
+
+            add(new Product(0,
+                    "Cyberpunk 2077 - PC",
+                    100,
+                    "Cyberpunk 2077 is an open-world, action-adventure story set in Night City\n" +
+                            "Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City\n" +
+                            "Take the riskiest job of your life and go after a prototype implant that is the key to immortality",
+                    "CD Projekt Red",
+                    "GamesPC",
+                    49.94,
+                    "https://m.media-amazon.com/images/I/81PxGQcHiRL._SL1500_.jpg",
+                    "Cyberpunk 2077"));
+
+            add(new Product(0,
+                    "Star Wars Battlefront 2 - Xbox One",
+                    100,
+                    "Embark on an endless Star Wars action experience from the bestselling Star Wars HD videogame franchise of all time.\n" +
+                            "Team up with a friend from the comfort of your couch with two-player offline split-screen play*. " +
+                            "Earn rewards, customise your troopers and heroes, and bring your upgrades with you on the online multiplayer battleground.\n",
+                    "EA",
+                    "GamesXBOX",
+                    49.94,
+                    "https://images-na.ssl-images-amazon.com/images/I/811CzHxfiKL._SL1500_.jpg",
+                    "Star Wars BF2"));
+
+            add(new Product(0,
+                    "Madden NFL 21 – PlayStation 4 & PlayStation 5",
+                    100,
+                    "A new generation of players are leaving their mark on the NFL. Will you rise to the occasion?.\n" +
+                            "hange the game and take control of your own legacy. Madden NFL 21 delivers innovation including: Face of the franchise: " +
+                            "Rise to fame: Rise to fame and become immortalized in Madden NFL 21 as you transcend NFL history and shape your path to greatness.\n"
+                            ,
+                    "EA",
+                    "GamesPS4",
+                    49.94,
+                    "https://images-na.ssl-images-amazon.com/images/I/81DkWnEV5-L._SL1500_.jpg",
+                    "Star Wars BF2"));
         }};
 
         for (Product item : products) {
