@@ -95,4 +95,22 @@ public class ProductsServiceImpl implements ProductsService {
 
     }
 
+    @Override
+    public List<Product> searchForProduct(String search) {
+
+        Specification specification = new Specification() {
+            @Override
+            public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Path p_name = root.get("productName");
+
+                Predicate p1 = criteriaBuilder.like(p_name,"%"+search+"%");
+
+                return p1;
+            }
+        };
+
+        return productsDao.findAll(specification);
+
+    }
+
 }

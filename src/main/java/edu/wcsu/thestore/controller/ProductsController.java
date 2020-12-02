@@ -61,11 +61,19 @@ public class ProductsController {
             List<Product> catagorizedProducts = productsService.findProductByCatagoryAndVendor(productCategory,productVendor);
             model.addAttribute("products", catagorizedProducts);
         }
-        System.out.println(productCategory);
-        System.out.println(productVendor);
+
         return "products";
     }
 
+    @RequestMapping("/search")
+    public String showProductsBySearch(@RequestParam("search") String search,  Model model) {
 
+            List<Product> searchResults = productsService.searchForProduct(search);
+            model.addAttribute("products", searchResults);
+
+
+
+        return "products";
+    }
 
 }

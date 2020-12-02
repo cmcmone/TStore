@@ -1,4 +1,6 @@
 
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <div class="header">
   <div class="header-top">
     <div class="top-left">
@@ -42,8 +44,8 @@
       </a>
     </div>
     <div class="middle-middle">
-      <form action="#">
-        <input type="text" class="header-search" placeholder="Enter your search key ...">
+      <form th:action="@{/search}" th:method="POST">
+        <input type="text" class="header-search" placeholder="Enter your search key ..." th:name="search">
         <button class="header-search-button" type="submit">Search</button>
       </form>
     </div>
