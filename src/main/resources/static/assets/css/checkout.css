@@ -21,6 +21,7 @@
   float: left;
   max-width: 50%;
   min-width: 49%;
+  padding-right: 15px;
 }
 
 .checkout-order {
