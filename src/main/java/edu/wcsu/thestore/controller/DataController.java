@@ -320,22 +320,175 @@ public class DataController {
                             "Earn rewards, customise your troopers and heroes, and bring your upgrades with you on the online multiplayer battleground.\n",
                     "EA",
                     "GamesXBOX",
-                    49.94,
+                    29.99,
                     "https://images-na.ssl-images-amazon.com/images/I/811CzHxfiKL._SL1500_.jpg",
-                    "Star Wars BF2"));
+                    "Star Wars Battle Front 2"));
 
             add(new Product(0,
                     "Madden NFL 21 – PlayStation 4 & PlayStation 5",
                     100,
                     "A new generation of players are leaving their mark on the NFL. Will you rise to the occasion?.\n" +
                             "hange the game and take control of your own legacy. Madden NFL 21 delivers innovation including: Face of the franchise: " +
-                            "Rise to fame: Rise to fame and become immortalized in Madden NFL 21 as you transcend NFL history and shape your path to greatness.\n"
-                            ,
+                            "Rise to fame: Rise to fame and become immortalized in Madden NFL 21 as you transcend NFL history and shape your path to greatness.\n",
                     "EA",
                     "GamesPS4",
-                    49.94,
+                    59.99,
                     "https://images-na.ssl-images-amazon.com/images/I/81DkWnEV5-L._SL1500_.jpg",
                     "Madden NFL 21"));
+
+            add(new Product(0,
+                    "Minecraft: Java Edition for PC/Mac ",
+                    100,
+                    "Build, create, and explore in Minecraft for PC and Mac! Have ridiculous amounts of fun!\n" +
+                            "Play alone or with friends. Minecraft for PC/Mac supports online multiplayer and solo play." +
+                            "\n" +
+                            "Take advantage of limitless supplies and create anything you can imagine in Creative Mode.\n",
+
+                    "Mojang",
+                    "GamesCode",
+                    26.95,
+                    "https://images-na.ssl-images-amazon.com/images/I/91Vk1mS1x3L.png",
+                    "Minecraft"));
+
+            add(new Product(0,
+                    "Minecraft Dungeons Hero - Nintendo Switch",
+                    100,
+                    "Fight your way through an all-new action-adventure game, inspired by classic dungeon crawlers\n" +
+                            "and set in the Minecraft universe! Brave the dungeons alone, or team up with friends! Up to four" +
+                            "players can battle together through action-packed, treasure-stuffed, wildly varied levels – all in an\n"
+                            +"epic quest to save the villagers and take down the evil Arch-Illager!",
+                    "Mojang",
+                    "GamesNintendo",
+                    29.99,
+                    "https://images-na.ssl-images-amazon.com/images/I/71hjU6rUypL._SL1500_.jpg",
+                    "Minecraft Dungeons"));
+
+            add(new Product(0,
+                    "Minecraft Dungeons Hero - PlayStation 4",
+                    100,
+                    "Fight your way through an all-new action-adventure game, inspired by classic dungeon crawlers\n" +
+                            "and set in the Minecraft universe! Brave the dungeons alone, or team up with friends! Up to four" +
+                            "players can battle together through action-packed, treasure-stuffed, wildly varied levels – all in an\n"
+                            +"epic quest to save the villagers and take down the evil Arch-Illager!",
+                    "Mojang",
+                    "GamesPS4",
+                    29.99,
+                    "https://images-na.ssl-images-amazon.com/images/I/81G5binfOuL._SL1500_.jpg",
+                    "Minecraft Dungeons"));
+
+            add(new Product(0,
+                    "Roblox Gift Card - 800 Robux [Online Game Code]",
+                    100,
+                    "Take your Roblox experience to the next level. Use Roblox Gift Card Digital Codes to receive Robux " +
+                            "(the virtual currency on Roblox) and get additional in-game content or upgrade your avatar with cool items.\n" ,
+                    "Roblox",
+                    "GamesGift",
+                    10.00,
+                    "https://images-na.ssl-images-amazon.com/images/I/71SfFWK2AUL._SL1465_.jpg",
+                    "800 Robux Online Code"));
+
+            add(new Product(0,
+                    "Roblox Gift Card - 2000 Robux [Online Game Code]",
+                    100,
+                    "Take your Roblox experience to the next level. Use Roblox Gift Card Digital Codes to receive Robux " +
+                            "(the virtual currency on Roblox) and get additional in-game content or upgrade your avatar with cool items.\n" ,
+                    "Roblox",
+                    "GamesGift",
+                    25.00,
+                    "https://m.media-amazon.com/images/I/71QMkXmLVCL._SL1465_.jpg",
+                    "2000 Robux Online Code"));
+
+            add(new Product(0,
+                    "Roblox Gift Card - 4500 Robux [Online Game Code]",
+                    100,
+                    "Take your Roblox experience to the next level. Use Roblox Gift Card Digital Codes to receive Robux " +
+                            "(the virtual currency on Roblox) and get additional in-game content or upgrade your avatar with cool items.\n" ,
+                    "Roblox",
+                    "GamesGift",
+                    50.00,
+                    "https://m.media-amazon.com/images/I/71QOx9THGRL._SL1465_.jpg",
+                    "4500 Robux Online Code"));
+
+            add(new Product(0,
+                    "Lenovo Flex 5 14\" 2-in-1 Laptop, 14.0\" FHD (1920 x 1080) Touch Display",
+                    100,
+                    "Thin, light, and stylish – This 2-in-1 laptop weighs just 3.64 pounds and is only 0.82 " +
+                            "thick. It's soft and comfortable to the touch, with a durable paint that creates a better user experience. Digital pen included" ,
+                    "Lenovo",
+                    "2-in-1",
+                    799.99,
+                    "https://images-na.ssl-images-amazon.com/images/I/81AbJXWCxXL._AC_SL1500_.jpg",
+                    "Lenovo Flex 5"));
+
+            add(new Product(0,
+                    "Microsoft Surface Pro X – 13\" Touch-Screen",
+                    100,
+                    "You’re always one step ahead. So is Surface Pro X. Sleek design and ultimate mobility combine " +
+                            "with razor-thin bezels that take your ideas to the edge of the brilliant 13” touchscreen. ",
+                    "Microsoft",
+                    "2-in-1",
+                    1499.00,
+                    "https://images-na.ssl-images-amazon.com/images/I/71cEgrftILL._AC_SL1500_.jpg",
+                    "Microsoft Surface Pro X"));
+
+            add(new Product(0,
+                    "2020 Newest HP Chromebook 11.6\" HD Laptop for Business and Student",
+                    100,
+                    "Chromebook is a computer for the way the modern world works, with thousands of apps, " +
+                            "built-in virus protection and cloud backups. It is secure, fast, up-to-date, versatile and simple.. ",
+                    "HP",
+                    "LaptopChrome",
+                    289.00,
+                    "https://m.media-amazon.com/images/I/712jY6xDLVL._AC_SL1500_.jpg",
+                    "2020 Newest HP Chromebook 11.6\""));
+
+            add(new Product(0,
+                    "Samsung Chromebook 4 Chrome OS 11.6\" HD Intel Celeron Processor N4000 4GB RAM 32GB eMMC Gigabit Wi-Fi - XE310XBA-K01US",
+                    100,
+                    "Chromebook is a computer for the way the modern world works, with thousands of apps, " +
+                            "built-in virus protection and cloud backups. It is secure, fast, up-to-date, versatile and simple.. ",
+                    "Samsung",
+                    "LaptopChrome",
+                    215.00,
+                    "https://images-na.ssl-images-amazon.com/images/I/61X3g56kwfL._AC_SL1106_.jpg",
+                    "Samsung Chromebook 4"));
+
+            add(new Product(0,
+                    "Beats Solo3 Wireless On-Ear Headphones - Apple W1 Headphone Chip, Class 1 Bluetooth, 40 Hours Of Listening Time - Black",
+                    100,
+                    "High-performance wireless Bluetooth headphones in black\n" +
+                            "Features the Apple W1 chip and Class 1 wireless Bluetooth connectivity ",
+                    "Beats",
+                    "Headset",
+                    200.00,
+                    "https://images-na.ssl-images-amazon.com/images/I/51QxA-98Q%2BL._AC_SL1000_.jpg",
+                    "Beats Solo3 Wireless"));
+
+            add(new Product(0,
+                    "Apple AirPods with Wireless Charging Case",
+                    100,
+                    "Universal fit that’s comfortable all day\n" +
+                            "Automatically on, automatically connected\n" +
+                            "Easy setup for all your Apple devices\n" +
+                            "Quick access to Siri by saying “Hey Siri”\n" +
+                            "Seamless switching between devices",
+                    "Apple",
+                    "WirelessAccs",
+                    200.00,
+                    "https://images-na.ssl-images-amazon.com/images/I/710rzW2RGcL._AC_SL1500_.jpg",
+                    "Apple AirPods"));
+
+            add(new Product(0,
+                    "Madden NFL 20: MUT 12000 Madden Points Pack - [PS4 Digital Code]",
+                    100,
+                    "Madden Ultimate Team (MUT) is the complete NFL team-building mode using your favorite NFL players from the past and present\n" +
+                            "Use MUT Points to open packs and build your Ultimate Team even faster",
+                    "EA",
+                    "GamesCode",
+                    200.00,
+                    "https://images-na.ssl-images-amazon.com/images/I/51rPSHSY1QL.jpg",
+                    "Madden NFL 20: MUT 12000 Madden Points Pack"));
+
         }};
 
         for (Product item : products) {
