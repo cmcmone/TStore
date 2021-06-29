@@ -9,11 +9,11 @@ TStore is an online shopping store (CS360 Project), a simple application written
 [TStore - Live DEMO](http://tstore.azurewebsites.net/)
 
 ## Developer
-[Roy Chen](https://github.com/cmcmone)
+[Ray Chen](https://github.com/cmcmone)
 
 [Jack](https://github.com/baxter026)
 
-[Austin](https://github.com/afam2000)
+[Austin K. Pham](https://github.com/afam2000)
 
 ## License
 [MIT](https://github.com/cmcmone/TStore/blob/main/LICENSE)
