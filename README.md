@@ -13,7 +13,7 @@ TStore is an online shopping store (CS360 Project), a simple application written
 
 [Jack](https://github.com/baxter026)
 
-[Austin](https://github.com/ReuvenLev)
+[Austin](https://github.com/afam2000)
 
 ## License
 [MIT](https://github.com/cmcmone/TStore/blob/main/LICENSE)
